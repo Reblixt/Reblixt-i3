@@ -16,3 +16,20 @@ cd git
 git clone https://github.com/nan0s7/nfancurve.git
 cd nfancurve
 chmod +x temp.sh
+
+## Do not forget autotiling script from https://github.com/nwg-piotr/autotiling
+
+## Apps needed
+
+teams
+brave
+1password
+spotify
+obsidian
+penpot
+easyeffet
+node.js
+neovim
+discord
+gimp
+npm packade, tsc, json-server, live-server, sass,
