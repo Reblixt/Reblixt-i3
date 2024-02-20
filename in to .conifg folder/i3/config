@@ -64,11 +64,11 @@ gaps outer 6
 #title_align center
 
 # add this if home monitors
-exec --no-startup-id xrandr --output DP-0 --mode 2560x1440 --rate 165 --pos 0x450
+exec --no-startup-id xrandr --output DP-0 --primary --mode 2560x1440 --rate 165 --pos 0x400
 exec --no-startup-id xrandr --output DP-2 --mode 1920x1080 --rate 165 --pos 2560x0 --rotate left
 
 #nfancurve
-exec --no-startup-id ~/git/nfancurve/run_temp.sh
+exec --no-startup-id ~/git/nfancurve/temp-wrap.sh
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
@@ -322,18 +322,27 @@ set $ws10 "10"
 # use workspaces on different displays:
 # where you have to replace VGA-0/HDMI-0 with the names for your displays
 # you can get from xrandr command
-#workspace $ws1 output VGA-0
+workspace $ws1 output DP-0
+workspace $ws2 output DP-2
+workspace $ws3 output DP-0
+workspace $ws4 output DP-0
+workspace $ws5 output DP-0
+workspace $ws6 output DP-0
+workspace $ws7 output DP-0
+workspace $ws8 output DP-0
 #workspace $ws2 output VGA-0
-#workspace $ws3 output HDMI-0
-#workspace $ws4 output HDMI-0
+workspace $ws9 output DP-2
+workspace $ws10 output DP-2
 #workspace $ws5 output HDMI-0
 
 # bind program to workspace and focus to them on startup:
 assign [class="Xfce4-terminal"] $ws1
-assign [class="(?i)firefox"] $ws2
+assign [class="brave"] $ws1
 assign [class="Thunar"] $ws3
 assign [class="thunderbird"] $ws4
 assign [class="TelegramDesktop"] $ws5
+assign [class="Discord"] $ws8
+assign [class="Spotify"] $ws8
 
 # automatic set focus new window if it opens on another workspace than the current:
 for_window [class=Xfce4-terminal] focus
