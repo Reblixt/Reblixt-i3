@@ -64,7 +64,7 @@ gaps outer 6
 #title_align center
 
 # add this if home monitors
-exec --no-startup-id xrandr --output DP-0 --primary --mode 2560x1440 --rate 165 --pos 0x400
+exec --no-startup-id xrandr --output DP-0 --primary --mode 2560x1440 --rate 165 --pos 0x470
 exec --no-startup-id xrandr --output DP-2 --mode 1920x1080 --rate 165 --pos 2560x0 --rotate left
 
 #nfancurve
