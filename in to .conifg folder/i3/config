@@ -48,7 +48,7 @@ workspace_layout default
 ##############################
 
 #border indicator on windows:
-new_window pixel 1
+new_window pixel 2
 
 # thin borders
 # hide_edge_borders both
@@ -64,11 +64,11 @@ gaps outer 6
 #title_align center
 
 # add this if home monitors
-exec --no-startup-id xrandr --output DP-0 --primary --mode 2560x1440 --rate 165 --pos 0x470
+exec --no-startup-id xrandr --output DP-0 --primary --mode 2560x1440 --rate 165 --pos 0x475
 exec --no-startup-id xrandr --output DP-2 --mode 1920x1080 --rate 165 --pos 2560x0 --rotate left
 
 #nfancurve
-exec --no-startup-id ~/git/nfancurve/temp-wrap.sh
+exec --no-startup-id ~/git/nfancurve/temp.sh
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
@@ -413,7 +413,7 @@ exec --no-startup-id ~/.screenlayout/monitor.sh
 
 # set wallpaper
 # exec --no-startup-id sleep 2 && nitrogen --restore
-exec --no-startup-id sleep 1 && feh --bg-fill ~/Pictures/wallpapper.png
+exec --no-startup-id sleep 1 && feh --bg-fill ~/Pictures/wallpaperGoku.jpg
 
 # set powersavings for display:
 exec --no-startup-id xset s 480 dpms 600 600 600
