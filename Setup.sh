@@ -17,6 +17,9 @@ echo "Installing Neovim and other packages"
 sudo pacman -S --noconfirm nodejs npm neovim fd ripgrep fzf bat btop
 sudo pacman -S --noconfirm zsh lazygit kitty xclip
 
+echo "Installing Flatpak"
+sudo pacman -S --noconfirm flatpak
+
 echo "Installing Display packages"
 sudo pacman -S --noconfirm xorg-xrandr nvidia-settings nvidia-utils
 
@@ -40,7 +43,7 @@ cd ..
 rm -rf yay
 
 echo "Installing packages with yay"
-yay -S --noconfirm autotiling brave-bin spotify discord blueberry
+yay -S --noconfirm autotiling brave-bin chromium spotify discord blueberry
 
 echo "Moving nfancurve"
 mv ~/git/Reblixt-i3/nfancurve-Removethis/ ~/git/nfancurve
@@ -63,5 +66,23 @@ mv Solidity-Nvim ~/.config/nvim
 
 echo "Making zsh the default shell"
 chsh -s $(which zsh)
+
+# Prompt for Git configuration details
+read -p "Enter your Git username: " git_username
+read -p "Enter your Git email: " git_email
+
+echo "Config git user and email"
+git config --global user.name "$git_username"
+git config --global user.email "$git_email"
+git config --global core.editor nvim
+
+echo "installing Ufw"
+sudo pacman -S --noconfirm ufw
+sudo ufw enable
+sudo ufw limit 22/tcp
+sudo ufw allow 80/tcp
+sudo ufw allow 443/tcp
+sudo ufw default deny incoming
+sudo ufw default allow outgoing
 
 echo "Script completed successfully"

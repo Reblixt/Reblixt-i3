@@ -1,35 +1,40 @@
-# Reblixt-i3
+# Post-Installation Script for Arch Linux
 
-## to enable bluetooth run
+This script automates the setup and configuration of an Arch Linux system after a fresh installation. It installs essential packages, configures the environment, and sets up various services and tools.
 
-sudo pacman -S --needed bluez bluez-utils blueman
-sudo systemctl enable --now bluetooth
+## Prerequisites
 
-## Nvidia driver install
+Before running the script, make sure you have the following:
 
-sudo pacman -S nvidia-dkms nvidia-utils lib32-nvidia-utils nvidia-settings xorg-server-devel
+- A fresh installation of Arch Linux.
+- Internet connectivity.
+- `git` installed (you can install it with `sudo pacman -S git` if it's not already installed).
 
-## install nfancurve
+## Usage
 
-mkdir git
-cd git
-git clone https://github.com/nan0s7/nfancurve.git
-cd nfancurve
-chmod +x temp.sh
+1. **Clone the Repository**
 
-## Do not forget autotiling script from https://github.com/nwg-piotr/autotiling
+   First, clone the repository containing this script to your home directory:
 
-## Apps needed
+   ```bash
+   git https://github.com/Reblixt/Reblixt-i3.git
+   cd Reblixt-i3
+   chmod +x Setup.sh
+   ./Setup.sh
+   ```
 
-teams
-brave
-1password
-spotify
-obsidian
-penpot
-easyeffet
-node.js
-neovim
-discord
-gimp
-npm packade, tsc, json-server, live-server, sass,
+## What the Script does
+
+1. System update and upgrade
+
+2. Installing these Packages:
+   i3, thunar, picom, polybar, rofi, feh, dunst, git, bluez, bluez-utils, blueman, nodejs, npm, neovim, fd, ripgrep, fzf, bat, btop, 1password, yay, brave, chromium spotify discord blueberry zsh, lazygit, kitty, xclip, flatpak, xorg-xrandr, nvidia-settings, nvidia-utils, and ufw.
+
+3. Moving config files for these application:
+   nfancurve, Wallpapper, polybar, rofi, picom, kitty, .zshrc, nvim
+
+4. make zsh default shell
+
+5. Setup global git user name, email and default editor
+
+6. configures UFW firewall
