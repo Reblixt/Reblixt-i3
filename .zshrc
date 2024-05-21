@@ -69,10 +69,4 @@ alias vi='nvim'
 eval "$(fzf --zsh)"
 eval "$(zoxide init --cmd cd zsh)" 
 
-# bun completions
-[ -s "/home/carl/.bun/_bun" ] && source "/home/carl/.bun/_bun"
-
-# bun
-export BUN_INSTALL="$HOME/.bun"
-export PATH="$BUN_INSTALL/bin:$PATH"
 
