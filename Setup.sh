@@ -4,6 +4,11 @@ set -e          # Exit immediately if a command exits with a non-zero status
 set -u          # Treat unset variables as an error and exit immediately
 set -o pipefail # Prevent errors in a pipeline from being masked
 
+# Prompt for Git configuration details
+read -p "Enter your Git username: " git_username
+read -p "Enter your Git email: " git_email
+read -p "Do you have SDDM installed? (y/n): " sddm_installed
+
 echo "Updating and upgrading system packages"
 sudo pacman -Syu --noconfirm
 
@@ -67,14 +72,28 @@ mv Solidity-Nvim ~/.config/nvim
 echo "Making zsh the default shell"
 chsh -s $(which zsh)
 
-# Prompt for Git configuration details
-read -p "Enter your Git username: " git_username
-read -p "Enter your Git email: " git_email
-
 echo "Config git user and email"
 git config --global user.name "$git_username"
 git config --global user.email "$git_email"
 git config --global core.editor nvim
+
+if [[ "$sddm_installed" == "y" ]]; then
+	echo "Configuring SDDM"
+	mv ~/git/Reblixt-i3/catppuccin-macchiato /usr/share/sddm/themes/
+
+	# Kontrollera om filen /etc/sddm.conf finns, om inte, skapa den
+	if [[ ! -f /etc/sddm.conf ]]; then
+		echo "/etc/sddm.conf does not exist. Creating it."
+		sudo touch /etc/sddm.conf
+	fi
+	# Lägg till texten till /etc/sddm.conf
+	echo "Adding theme configuration to /etc/sddm.conf"
+	echo "[Theme]" | sudo tee -a /etc/sddm.conf
+	echo "Current=catppuccin-macchiato" | sudo tee -a /etc/sddm.conf
+
+else
+	echo "Skipping SDDM installation"
+fi
 
 echo "installing Ufw"
 sudo pacman -S --noconfirm ufw
