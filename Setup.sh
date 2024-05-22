@@ -8,9 +8,18 @@ set -o pipefail # Prevent errors in a pipeline from being masked
 read -p "Enter your Git username: " git_username
 read -p "Enter your Git email: " git_email
 read -p "Do you have SDDM installed? (y/n): " sddm_installed
+read -p "Do you have a Nvidia GPU? (y/n): " nvidia_gpu
 
 echo "Updating and upgrading system packages"
 sudo pacman -Syu --noconfirm
+sudo pacman -S --noconfirm linux-headers linux-firmware
+
+echo "Installing nvidia drivers"
+if [[ "$nvidia_gpu" == "y" ]]; then
+	sudo pacman -S --noconfirm nvidia-dkms nvidia-utils nvidia-settings
+else
+	"Skipping Nvidia drivers installation"
+fi
 
 echo "Installing i3 and other packages"
 sudo pacman -S --noconfirm i3 thunar picom polybar rofi feh dunst
@@ -95,7 +104,7 @@ else
 	echo "Skipping SDDM installation"
 fi
 
-echo "installing Ufw"
+echo "installing Ufw ---Firewall---"
 sudo pacman -S --noconfirm ufw
 sudo ufw enable
 sudo ufw limit 22/tcp
@@ -105,3 +114,11 @@ sudo ufw default deny incoming
 sudo ufw default allow outgoing
 
 echo "Script completed successfully"
+
+echo "Rebooting system is recommended to apply changes."
+read -p "Reboot now? (y/n): " reboot_now
+if [[ "$reboot_now" == "y" ]]; then
+	sudo reboot
+fi
+
+echo "Please reboot soon to apply changes."
