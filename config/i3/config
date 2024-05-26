@@ -179,7 +179,7 @@ bindsym $mod+r mode "resize"
 ######################################
 
 # start a terminal
-bindsym $mod+Return exec --no-startup-id kitty
+bindsym $mod+Return exec --no-startup-id alacritty
 #xfce4-terminal
 
 # kill focused window
@@ -342,8 +342,8 @@ assign [class="brave"] $ws1
 assign [class="Thunar"] $ws3
 assign [class="thunderbird"] $ws4
 assign [class="TelegramDesktop"] $ws5
-assign [class="Discord"] $ws8
-assign [class="Spotify"] $ws8
+assign [class="discord"] $ws8
+assign [class="spotify"] $ws8
 
 # automatic set focus new window if it opens on another workspace than the current:
 for_window [class=Xfce4-terminal] focus
@@ -450,6 +450,7 @@ exec_always --no-startup-id autotiling
 #exec --no-startup-id sleep 2 && xfce4-terminal
 exec --no-startup-id sleep 7 && brave
 exec --no-startup-id sleep 7 && discord
+exec --no-startup-id sleep 9 && spotify
 #exec --no-startup-id sleep 3 && thunar
 #exec --no-startup-id /home/reblixt/git/nvidiafan/nvidiafan.sh
 ###############

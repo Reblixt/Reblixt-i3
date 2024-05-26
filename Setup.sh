@@ -29,7 +29,7 @@ sudo pacman -S --noconfirm git bluez bluez-utils blueman
 
 echo "Installing Neovim and other packages"
 sudo pacman -S --noconfirm nodejs npm neovim fd ripgrep fzf bat btop
-sudo pacman -S --noconfirm zsh lazygit kitty xclip
+sudo pacman -S --noconfirm zsh lazygit alacritty kitty xclip
 
 echo "Installing Flatpak"
 sudo pacman -S --noconfirm flatpak
@@ -66,10 +66,10 @@ echo "Moving Pictures"
 mv ~/git/Reblixt-i3/Pictures/ ~/Pictures
 
 echo "Cleaning up old configs"
-rm -rf ~/.config/i3 ~/.config/polybar ~/.config/rofi ~/.config/kitty
+rm -rf ~/.config/i3 ~/.config/polybar ~/.config/rofi ~/.config/kitty ~/.config/picom.conf ~/.config/alacritty
 
 echo "Moving new configs"
-mv ~/git/Reblixt-i3/config/{i3,rofi,polybar,kitty,picom.conf} ~/.config
+mv ~/git/Reblixt-i3/config/{i3,rofi,polybar,kitty,picom.conf,alacritty} ~/.config
 
 echo "Moving zsh config"
 mv ~/git/Reblixt-i3/.zshrc ~/
