@@ -69,7 +69,7 @@ echo "Cleaning up old configs"
 rm -rf ~/.config/i3 ~/.config/polybar ~/.config/rofi ~/.config/kitty ~/.config/picom.conf ~/.config/alacritty
 
 echo "Moving new configs"
-mv ~/git/Reblixt-i3/config/{i3,rofi,polybar,kitty,picom.conf,alacritty,catppuccin} ~/.config
+mv ~/git/Reblixt-i3/config/{i3,rofi,polybar,kitty,picom.conf,alacritty,catppuccin,dunst} ~/.config
 chmod +x ~/.config/catppuccin/scripts/cava.sh
 chmod +x ~/.config/catppuccin/scripts/cmus.sh
 chmod +x ~/.config/catppuccin/scripts/powermenu.sh
