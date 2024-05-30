@@ -18,7 +18,8 @@ family = "FiraCode Nerd Font"
 style = "Bold Italic"
 
 [window]
-opacity = 0.96
+opacity = 0.88
+padding = {x = 5, y = 5}
 
 [cursor]
 style = "Beam"

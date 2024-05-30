@@ -54,8 +54,8 @@ new_window pixel 2
 # hide_edge_borders both
 
 # Set inner/outer gaps
-gaps inner 8
-gaps outer 6
+gaps inner 10
+gaps outer 4
 
 # show window title bars (not officially supported with i3gaps)
 #default_border normal
@@ -186,7 +186,7 @@ bindsym $mod+Return exec --no-startup-id alacritty
 bindsym $mod+q kill
 
 # exit-menu
-bindsym $mod+Shift+e exec --no-startup-id ~/.config/polybar/blocks/scripts/powermenu.sh
+bindsym $mod+Shift+e exec --no-startup-id ~/.config/catppuccin/scripts/powermenu.sh
 
 # Lock the system
 # lock with a picture:
@@ -351,6 +351,10 @@ for_window [class=(?i)firefox] focus
 for_window [class=Thunar] focus
 for_window [class=Thunderbird] focus
 for_window [class=TelegramDesktop] focus
+for_window [class="Lutris"] floating enable
+for_window [class="Lutris"] resize set 1200 700
+for_window [class="Lutris"] move absolute position center
+
 
 ##############
 # compositor #
@@ -437,7 +441,7 @@ exec --no-startup-id xscreensaver --no-splash
 #exec --no-startup-id /usr/bin/dunst --config ~/.config/dunst/dunstrc
 # may need to run dbus-launch explicitly: 
 #exec --no-startup-id dbus-launch /usr/bin/dunst
-exec --no-startup-id /usr/bin/dunst
+exec --no-startup-id dunst -conf ~/.config/dunst/dunstrc
 # alternative if you installed aside with XFCE4:
 # exec --no-startup-id /usr/lib/xfce4/notifyd/xfce4-notifyd &
 
@@ -513,12 +517,20 @@ set $grey		#b0b5bd
 set $mediumgrey		#8b8b8b
 set $yellowbrown	#e1b700
 
+smart_borders on
+
 # define colors for windows:
 #class		        	border		bground		text		indicator	child_border
-client.focused		    	$lightblue	$darkblue	$white		$mediumgrey	$mediumgrey
-client.unfocused	    	$darkblue	$darkblue	$grey		$darkgrey	$darkgrey
-client.focused_inactive		$darkblue	$darkblue	$grey		$black		$black
-client.urgent		    	$urgentred	$urgentred	$white		$yellowbrown	$yellowbrown
+#client.focused		    	$lightblue	$darkblue	$white		$mediumgrey	$mediumgrey
+#client.unfocused	    	$darkblue	$darkblue	$grey		$darkgrey	$darkgrey
+#client.focused_inactive		$darkblue	$darkblue	$grey		$black		$black
+#client.urgent		    	$urgentred	$urgentred	$white		$yellowbrown	$yellowbrown
+client.focused			#cad3f5 #cad3f5 #cad3f5 #cad3f5
+client.focused_inactive	#24273a #24273a #24273a #24273a
+client.unfocused		#24273a #24273a #24273a #24273a
+client.urgent			#E78284 #E78284 #E78284 #E78284
+client.placeholder		#24273a #24273a #24273a #24273a
+
 
 ############################################
 # bar settings (input comes from i3blocks) #
@@ -592,7 +604,7 @@ client.urgent		    	$urgentred	$urgentred	$white		$yellowbrown	$yellowbrown
 ## rofi bindings fancy application menu ($mod+d /F9 optional disabled)
 
 bindsym $mod+d exec --no-startup-id rofi -modi drun -show drun \
-		-config ~/.config/polybar/blocks/scripts/rofi/launcher.rasi
+		-config ~/.config/rofi/menu.rasi -show-icons
 
 #bindsym F9 exec --no-startup-id rofi -modi drun -show drun \
 #		-config ~/.config/rofi/rofidmenu.rasi
@@ -613,5 +625,5 @@ exec --no-startup-id greenclip daemon>/dev/null
 
 #exec --no-startup-id monitor=DP-0,2560x1440@165,0x450,1
 #exec --no-startup-id monitor=DP-2,1920x1080@165,2560x0,1,transform,1
-exec_always --no-startup-id $HOME/.config/polybar/blocks/launch.sh
+exec_always --no-startup-id $HOME/.config/catppuccin/scripts/launch_polybar.sh
 

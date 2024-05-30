@@ -22,7 +22,7 @@ else
 fi
 
 echo "Installing i3 and other packages"
-sudo pacman -S --noconfirm i3 thunar picom polybar rofi feh dunst
+sudo pacman -S --noconfirm i3 thunar picom polybar rofi feh dunst cmus
 
 echo "Installing Bluetooth packages"
 sudo pacman -S --noconfirm git bluez bluez-utils blueman
@@ -69,7 +69,12 @@ echo "Cleaning up old configs"
 rm -rf ~/.config/i3 ~/.config/polybar ~/.config/rofi ~/.config/kitty ~/.config/picom.conf ~/.config/alacritty
 
 echo "Moving new configs"
-mv ~/git/Reblixt-i3/config/{i3,rofi,polybar,kitty,picom.conf,alacritty} ~/.config
+mv ~/git/Reblixt-i3/config/{i3,rofi,polybar,kitty,picom.conf,alacritty,catppuccin} ~/.config
+chmod +x ~/.config/catppuccin/scripts/cava.sh
+chmod +x ~/.config/catppuccin/scripts/cmus.sh
+chmod +x ~/.config/catppuccin/scripts/powermenu.sh
+chmod +x ~/.config/catppuccin/scripts/launch_polybar.sh
+chmod +x ~/.config/catppuccin/scripts/powermenu_fullscreen.sh
 
 echo "Moving zsh config"
 mv ~/git/Reblixt-i3/.zshrc ~/

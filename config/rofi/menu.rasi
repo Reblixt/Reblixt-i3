@@ -1,5 +1,6 @@
+
 configuration {
- display-drun: "";
+ display-drun: "";
  display-clipboard: "";
  drun-display-format: "{name}";
  modi: "drun";
@@ -10,7 +11,7 @@ configuration {
 * {
  font: "JetbrainsMono 10";
 
- background-color: @bg;
+ background-color: @black;
  separatorcolor: transparent;
 
  border: 0;
@@ -20,20 +21,18 @@ configuration {
 }
 
 window {
- width: 170px;
- height: 150px;
+ width: 400px;
+ height: 500px;
  border-radius: 0;
  border: 0;
  padding: 10;
  background-color: @bg;
- x-offset:   863px;        
- y-offset:   -422px;
 }
 
 mainbox {
- background-color: @bg;
- children: [listview];
- padding: 0;
+background-color: @bg;
+children: [inputbar,listview];
+padding: 0;
 }
 
 listview {
@@ -47,27 +46,26 @@ listview {
 
 
 inputbar {
- children: [prompt, entry];
- background-color: @bg;
- border-radius: 0;
- margin: 0;
+children: [prompt, entry];
+background-color: @black;
+border-radius: 10;
+margin: 10 0 10 0;
 }
 
 prompt {
- enabled: false;
  font: "Symbols Nerd Font 10";
- background-color: @bg;
- text-color: @gr2;
+ background-color: @black;
+ text-color: @fg;
  enabled: true;
  border-radius: 0;
- padding: 0;
+ padding: 5 10 0 10;
 
 }
 
 entry {
  background-color: transparent;
  text-color: @fg;
- placeholder-color: @bg;
+ placeholder-color: @fg;
  border-radius: 0;
  placeholder: "Search...";
  blink: false;
@@ -90,7 +88,7 @@ element-text {
 
 element-icon {
  background-color: inherit;
- text-color: inherit;
+ text-color: @fg;
  padding: 0 10 0 0;
 }
 
@@ -107,16 +105,16 @@ background-color: @bg;
 text-color: @fg;
 }
 element.selected.normal {
-background-color: @blue;
-text-color: @bg;
+background-color: @black;
+text-color: @fg;
 }
 element.selected.urgent {
-background-color: @blue;
-text-color: @bg;
+background-color: @black;
+text-color: @fg;
 }
 element.selected.active {
-background-color: @blue;
-text-color: @bg;
+background-color: @black;
+text-color: @fg;
 }
 element.alternate.normal {
 background-color: @bg;
@@ -128,6 +126,5 @@ text-color: @fg;
 }
 element.alternate.active {
 background-color: @bg;
-	text-color: @fg;
+text-color: @fg;
 }
-
