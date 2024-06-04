@@ -91,6 +91,10 @@ git config --global user.name "$git_username"
 git config --global user.email "$git_email"
 git config --global core.editor nvim
 
+echo "Moving Tmux config"
+mv ~/git/Reblixt-i3/.tmux ~/
+mv ~/git/Reblixt-i3/.tmux.conf ~/
+
 if [[ "$sddm_installed" == "y" ]]; then
 	echo "Configuring SDDM"
 	mv ~/git/Reblixt-i3/catppuccin-macchiato /usr/share/sddm/themes/
