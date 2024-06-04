@@ -90,6 +90,7 @@ echo "Config git user and email"
 git config --global user.name "$git_username"
 git config --global user.email "$git_email"
 git config --global core.editor nvim
+git config --global init.defaultBranch main
 
 echo "Moving Tmux config"
 mv ~/git/Reblixt-i3/.tmux ~/
