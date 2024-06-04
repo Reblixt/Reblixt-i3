@@ -29,7 +29,7 @@ sudo pacman -S --noconfirm git bluez bluez-utils blueman
 
 echo "Installing Neovim and other packages"
 sudo pacman -S --noconfirm nodejs npm neovim fd ripgrep fzf bat btop
-sudo pacman -S --noconfirm zsh lazygit alacritty kitty xclip
+sudo pacman -S --noconfirm zsh lazygit alacritty kitty xclip tmux zoxide
 
 echo "Installing Flatpak"
 sudo pacman -S --noconfirm flatpak
@@ -97,7 +97,7 @@ mv ~/git/Reblixt-i3/.tmux.conf ~/
 
 if [[ "$sddm_installed" == "y" ]]; then
 	echo "Configuring SDDM"
-	mv ~/git/Reblixt-i3/catppuccin-macchiato /usr/share/sddm/themes/
+	sudo mv ~/git/Reblixt-i3/catppuccin-macchiato /usr/share/sddm/themes/
 
 	# Kontrollera om filen /etc/sddm.conf finns, om inte, skapa den
 	if [[ ! -f /etc/sddm.conf ]]; then
