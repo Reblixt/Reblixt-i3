@@ -61,9 +61,14 @@ zstyle ':fzf-tab:complete:cd:*' fzf-preview 'ls --color $realpath'
 zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
 
 # Aliases 
+alias ll='ls -l'
 alias ls='ls --color'
 alias vim='nvim'
 alias vi='nvim'
+alias tmuxit="tmux source-file ~/.tmux.conf"
+alias update="sudo apt update"
+alias upgrade='sudo apt upgrade'
+alias install="sudo apt install"
 
 # Shell integration
 eval "$(fzf --zsh)"
