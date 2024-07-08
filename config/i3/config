@@ -64,8 +64,8 @@ gaps outer 4
 #title_align center
 
 # add this if home monitors
-exec --no-startup-id xrandr --output DP-0 --primary --mode 2560x1440 --rate 165 --pos 0x475
-exec --no-startup-id xrandr --output DP-2 --mode 1920x1080 --rate 165 --pos 2560x0 --rotate left
+exec --no-startup-id xrandr --output DP-2 --mode 1920x1080 --rate 165 --left-of DP-0
+exec --no-startup-id sleep 2 && xrandr --output DP-0 --primary --mode 2560x1440 --rate 165
 
 #nfancurve
 exec --no-startup-id ~/git/nfancurve/temp.sh
@@ -270,14 +270,15 @@ bindsym $mod+Shift+w exec --no-startup-id ~/.config/i3/scripts/empty_workspace
 #bindsym XF86AudioRaiseVolume exec --no-startup-id amixer -D pulse sset Master 5%+ && pkill -RTMIN+1 i3blocks
 #bindsym XF86AudioLowerVolume exec --no-startup-id amixer -D pulse sset Master 5%- && pkill -RTMIN+1 i3blocks
 # use meta keys showing osc using dunst
-bindsym XF86AudioRaiseVolume exec --no-startup-id ~/.config/i3/scripts/volume_brightness.sh volume_up
+bindsym XF86AudioaiseVolume exec --no-startup-id ~/.config/i3/scripts/volume_brightness.sh volume_up
 bindsym XF86AudioLowerVolume exec --no-startup-id ~/.config/i3/scripts/volume_brightness.sh volume_down
 
 # gradular volume control
-bindsym $mod+XF86AudioRaiseVolume exec --no-startup-id amixer -D pulse sset Master 1%+ && pkill -RTMIN+1 i3blocks
-bindsym $mod+XF86AudioLowerVolume exec --no-startup-id amixer -D pulse sset Master 1%- && pkill -RTMIN+1 i3blocks
+bindsym $mod+F9 exec --no-startup-id pamixer -i 5 
+bindsym $mod+F8 exec --no-startup-id pamixer -d 5
 
 # mute
+bindsym $mod+F7 exec --no-startup-id pamixer -t
 #bindsym XF86AudioMute exec --no-startup-id amixer sset Master toggle && killall -USR1 i3blocks
 # use meta keys showing osc using dunst
 bindsym XF86AudioMute exec --no-startup-id ~/.config/i3/scripts/volume_brightness.sh volume_mute
@@ -295,9 +296,8 @@ bindsym XF86AudioPrev exec --no-startup-id playerctl previous
 bindsym $mod+p exec --no-startup-id /usr/local/bin/switch-audio-port
 
 ## App shortcuts
-bindsym $mod+w exec --no-startup-id /usr/bin/firefox
-bindsym $mod+u exec --no-startup-id /usr/bin/thunar
-bindsym $mod+b exec --no-startup-id /usr/bin/brave
+bindsym $mod+u exec --no-startup-id /run/current-system/sw/bin/thunar
+bindsym $mod+b exec --no-startup-id /run/current-system/sw/bin/brave
 bindsym Print exec --no-startup-id scrot ~/%Y-%m-%d-%T-screenshot.png && notify-send "Screenshot saved to ~/$(date +"%Y-%m-%d-%T")-screenshot.png"
 
 # Power Profiles menu switcher (rofi)
@@ -324,33 +324,33 @@ set $ws10 "10"
 # where you have to replace VGA-0/HDMI-0 with the names for your displays
 # you can get from xrandr command
 workspace $ws1 output DP-0
-workspace $ws2 output DP-2
+workspace $ws2 output DP-0
 workspace $ws3 output DP-0
 workspace $ws4 output DP-0
 workspace $ws5 output DP-0
 workspace $ws6 output DP-0
-workspace $ws7 output DP-0
-workspace $ws8 output DP-0
-#workspace $ws2 output VGA-0
+workspace $ws7 output DP-2
+workspace $ws8 output DP-2
 workspace $ws9 output DP-2
 workspace $ws10 output DP-2
-#workspace $ws5 output HDMI-0
 
 # bind program to workspace and focus to them on startup:
-assign [class="Xfce4-terminal"] $ws1
+#assign [class="Xfce4-terminal"] $ws1
 assign [class="brave"] $ws1
 assign [class="Thunar"] $ws3
-assign [class="thunderbird"] $ws4
+assign [class="thunderbird"] $ws9
 assign [class="TelegramDesktop"] $ws5
-assign [class="discord"] $ws8
-assign [class="spotify"] $ws8
+assign [class="discord"] $ws10
+assign [class="spotify"] $ws10
+assign [class="slack"] $ws8
+
 
 # automatic set focus new window if it opens on another workspace than the current:
-for_window [class=Xfce4-terminal] focus
-for_window [class=(?i)firefox] focus
-for_window [class=Thunar] focus
-for_window [class=Thunderbird] focus
-for_window [class=TelegramDesktop] focus
+#for_window [class=Xfce4-terminal] focus
+#for_window [class=(?i)firefox] focus
+#for_window [class=Thunar] focus
+#for_window [class=Thunderbird] focus
+#for_window [class=TelegramDesktop] focus
 for_window [class="Lutris"] floating enable
 for_window [class="Lutris"] resize set 1200 700
 for_window [class="Lutris"] move absolute position center
@@ -414,11 +414,11 @@ exec --no-startup-id dex --autostart --environment i3
 
 # start a script to setup displays
 # uncomment the next line, use arandr to setup displays and save the file as monitor:
-exec --no-startup-id ~/.screenlayout/monitor.sh
+#exec --no-startup-id ~/.screenlayout/monitor.sh
 
 # set wallpaper
 # exec --no-startup-id sleep 2 && nitrogen --restore
-exec --no-startup-id sleep 1 && feh --bg-fill ~/Pictures/wallpaperGoku.jpg
+exec --no-startup-id sleep 2 && feh --bg-fill ~/Pictures/wallpaperGoku.jpg
 
 # set powersavings for display:
 exec --no-startup-id xset s 480 dpms 600 600 600
@@ -442,12 +442,9 @@ exec --no-startup-id xscreensaver --no-splash
 # may need to run dbus-launch explicitly: 
 #exec --no-startup-id dbus-launch /usr/bin/dunst
 exec --no-startup-id dunst -conf ~/.config/dunst/dunstrc
-# alternative if you installed aside with XFCE4:
-# exec --no-startup-id /usr/lib/xfce4/notifyd/xfce4-notifyd &
 
 # autotiling script
 # https://github.com/nwg-piotr/autotiling
-# `yay -S autotiling ;) (it is in AUR)
 exec_always --no-startup-id autotiling
 
 # Autostart apps as you like
@@ -455,8 +452,8 @@ exec_always --no-startup-id autotiling
 exec --no-startup-id sleep 7 && brave
 exec --no-startup-id sleep 7 && discord
 exec --no-startup-id sleep 9 && spotify
-#exec --no-startup-id sleep 3 && thunar
-#exec --no-startup-id /home/reblixt/git/nvidiafan/nvidiafan.sh
+exec --no-startup-id sleep 11 && slack
+exec --no-startup-id sleep 13 && thunderbird
 ###############
 # system tray #
 ###############
