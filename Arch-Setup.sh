@@ -16,13 +16,13 @@ sudo pacman -S --noconfirm linux-headers linux-firmware
 
 echo "Installing nvidia drivers"
 if [[ "$nvidia_gpu" == "y" ]]; then
-	sudo pacman -S --noconfirm nvidia-dkms nvidia-utils nvidia-settings
+  sudo pacman -S --noconfirm nvidia-dkms nvidia-utils nvidia-settings
 else
-	"Skipping Nvidia drivers installation"
+  "Skipping Nvidia drivers installation"
 fi
 
 echo "Installing i3 and other packages"
-sudo pacman -S --noconfirm i3 thunar picom polybar rofi feh dunst cmus
+sudo pacman -S --noconfirm i3 thunar picom polybar rofi feh dunst cmus redshift
 
 echo "Installing Bluetooth packages"
 sudo pacman -S --noconfirm git bluez bluez-utils blueman
@@ -57,7 +57,7 @@ cd ..
 rm -rf yay
 
 echo "Installing packages with yay"
-yay -S --noconfirm autotiling brave-bin chromium spotify discord blueberry
+yay -S --noconfirm autotiling brave-bin chromium spotify discord blueberry slack-desktop ttf-symbola noto-fonts-cjk noto-fonts-emoji ttf-twemoji
 
 echo "Moving nfancurve"
 mv ~/git/Reblixt-i3/nfancurve-Removethis/ ~/git/nfancurve
@@ -97,21 +97,21 @@ mv ~/git/Reblixt-i3/.tmux ~/
 mv ~/git/Reblixt-i3/.tmux.conf ~/
 
 if [[ "$sddm_installed" == "y" ]]; then
-	echo "Configuring SDDM"
-	sudo mv ~/git/Reblixt-i3/catppuccin-macchiato /usr/share/sddm/themes/
+  echo "Configuring SDDM"
+  sudo mv ~/git/Reblixt-i3/catppuccin-macchiato /usr/share/sddm/themes/
 
-	# Kontrollera om filen /etc/sddm.conf finns, om inte, skapa den
-	if [[ ! -f /etc/sddm.conf ]]; then
-		echo "/etc/sddm.conf does not exist. Creating it."
-		sudo touch /etc/sddm.conf
-	fi
-	# Lägg till texten till /etc/sddm.conf
-	echo "Adding theme configuration to /etc/sddm.conf"
-	echo "[Theme]" | sudo tee -a /etc/sddm.conf
-	echo "Current=catppuccin-macchiato" | sudo tee -a /etc/sddm.conf
+  # Kontrollera om filen /etc/sddm.conf finns, om inte, skapa den
+  if [[ ! -f /etc/sddm.conf ]]; then
+    echo "/etc/sddm.conf does not exist. Creating it."
+    sudo touch /etc/sddm.conf
+  fi
+  # Lägg till texten till /etc/sddm.conf
+  echo "Adding theme configuration to /etc/sddm.conf"
+  echo "[Theme]" | sudo tee -a /etc/sddm.conf
+  echo "Current=catppuccin-macchiato" | sudo tee -a /etc/sddm.conf
 
 else
-	echo "Skipping SDDM installation"
+  echo "Skipping SDDM installation"
 fi
 
 echo "installing Ufw ---Firewall---"
@@ -128,7 +128,7 @@ echo "Script completed successfully"
 echo "Rebooting system is recommended to apply changes."
 read -p "Reboot now? (y/n): " reboot_now
 if [[ "$reboot_now" == "y" ]]; then
-	sudo reboot
+  sudo reboot
 fi
 
 echo "Please reboot soon to apply changes."

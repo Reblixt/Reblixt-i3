@@ -210,8 +210,8 @@ bindsym F1 exec --no-startup-id ~/.config/i3/scripts/keyhint-2
 #bindsym XF86MonBrightnessUp exec --no-startup-id xbacklight +10 && notify-send "Brightness - $(xbacklight -get | cut -d '.' -f 1)%"
 #bindsym XF86MonBrightnessDown exec --no-startup-id xbacklight -10 && notify-send "Brightness - $(xbacklight -get | cut -d '.' -f 1)%"
 # Backlight setting using dunst osc
-bindsym XF86MonBrightnessUp exec --no-startup-id ~/.config/i3/scripts/volume_brightness.sh brightness_up
-bindsym XF86MonBrightnessDown exec --no-startup-id ~/.config/i3/scripts/volume_brightness.sh brightness_down
+# bindsym XF86MonBrightnessUp exec --no-startup-id ~/.config/i3/scripts/volume_brightness.sh brightness_up
+# bindsym XF86MonBrightnessDown exec --no-startup-id ~/.config/i3/scripts/volume_brightness.sh brightness_down
 
 # change focus
 bindsym $mod+h focus left
@@ -297,8 +297,8 @@ bindsym $mod+p exec --no-startup-id /usr/local/bin/switch-audio-port
 
 ## App shortcuts
 bindsym $mod+u exec --no-startup-id /bin/thunar
-bindsym $mod+b exec --no-startup-id /bin/brave-browser
-bindsym $mod+Mod1+b exec --no-startup-id /bin/chromium-browser
+bindsym $mod+b exec --no-startup-id /bin/brave
+bindsym $mod+Mod1+b exec --no-startup-id /bin/chromium
 
 bindsym Print exec --no-startup-id scrot ~/%Y-%m-%d-%T-screenshot.png && notify-send "Screenshot saved to ~/$(date +"%Y-%m-%d-%T")-screenshot.png"
 
@@ -338,7 +338,7 @@ workspace $ws10 output DP-2
 
 # bind program to workspace and focus to them on startup:
 #assign [class="Xfce4-terminal"] $ws1
-assign [class="brave-browser"] $ws1
+assign [class="brave"] $ws1
 assign [class="Thunar"] $ws3
 assign [class="thunderbird"] $ws9
 assign [class="TelegramDesktop"] $ws5
@@ -391,8 +391,12 @@ exec_always --no-startup-id picom --config  ~/.config/picom.conf
 # autostart applications/services on login: #
 #############################################
 
+# exec --no-startup-id /bin/redshift
+
+
 #get auth work with polkit-gnome
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
+
 
 # dex execute .desktop files + apps using /etc/xdg/autostart.
 # when second to i3 a DE is installed or mixed usage of i3 + xfce4 or GNOME
@@ -451,7 +455,7 @@ exec_always --no-startup-id /bin/autotiling
 
 # Autostart apps as you like
 #exec --no-startup-id sleep 2 && xfce4-terminal
-exec --no-startup-id sleep 7 && brave-browser
+exec --no-startup-id sleep 7 && brave
 exec --no-startup-id sleep 7 && discord
 exec --no-startup-id sleep 9 && spotify
 exec --no-startup-id sleep 11 && slack
@@ -463,7 +467,7 @@ exec --no-startup-id sleep 13 && thunderbird
 # you need to have tray apps started manually one by one:
 
 # start blueberry app for managing bluetooth devices from tray:
-#exec --no-startup-id blueberry
+exec --no-startup-id blueberry
 
 # networkmanager-applet
 #exec --no-startup-id nm-applet
