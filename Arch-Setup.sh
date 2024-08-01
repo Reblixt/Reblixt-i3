@@ -28,7 +28,7 @@ echo "Installing Bluetooth packages"
 sudo pacman -S --noconfirm git bluez bluez-utils blueman
 
 echo "Installing Neovim and other packages"
-sudo pacman -S --noconfirm nodejs npm neovim fd ripgrep fzf bat btop
+sudo pacman -S --noconfirm nodejs npm neovim fd ripgrep fzf bat btop luarocks wl-clipboard unzip
 sudo pacman -S --noconfirm zsh lazygit alacritty kitty xclip tmux zoxide
 
 echo "Installing Flatpak"
@@ -81,7 +81,9 @@ mv ~/git/Reblixt-i3/.zshrc ~/
 
 echo "Moving nvim config"
 git clone https://github.com/Reblixt/Solidity-Nvim.git
-mv Solidity-Nvim ~/.config/nvim
+mv Solidity-Nvim ~/.config/nvim.lazy
+git clone https://github.com/Reblixt/NvimChad.git
+mv NvimChad ~/.config/nvim.chad
 
 echo "Making zsh the default shell"
 chsh -s $(which zsh)
