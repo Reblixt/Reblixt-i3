@@ -57,7 +57,7 @@ cd ..
 rm -rf yay
 
 echo "Installing packages with yay"
-yay -S --noconfirm autotiling brave-bin chromium spotify discord blueberry slack-desktop ttf-symbola noto-fonts-cjk noto-fonts-emoji ttf-twemoji solidity
+yay -S --noconfirm autotiling brave-bin chromium spotify discord blueberry slack-desktop ttf-symbola noto-fonts-cjk noto-fonts-emoji ttf-twemoji telegram-desktop zen-browser-bin flameshot
 
 echo "Moving nfancurve"
 mv ~/git/Reblixt-i3/nfancurve-Removethis/ ~/git/nfancurve
@@ -81,9 +81,9 @@ mv ~/git/Reblixt-i3/.zshrc ~/
 
 echo "Moving nvim config"
 git clone https://github.com/Reblixt/Solidity-Nvim.git
-mv Solidity-Nvim ~/.config/nvim.lazy
-git clone https://github.com/Reblixt/NvimChad.git
-mv NvimChad ~/.config/nvim.chad
+mv Solidity-Nvim ~/.config/nvim
+# git clone https://github.com/Reblixt/NvimChad.git
+# mv NvimChad ~/.config/nvim.chad
 
 echo "Making zsh the default shell"
 chsh -s $(which zsh)

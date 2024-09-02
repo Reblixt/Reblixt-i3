@@ -297,10 +297,13 @@ bindsym $mod+p exec --no-startup-id /usr/local/bin/switch-audio-port
 
 ## App shortcuts
 bindsym $mod+u exec --no-startup-id /bin/thunar
-bindsym $mod+b exec --no-startup-id /bin/brave
+# bindsym $mod+b exec --no-startup-id /bin/brave
+bindsym $mod+b exec flatpak run io.github.zen_browser.zen
 bindsym $mod+Mod1+b exec --no-startup-id /bin/chromium
 
-bindsym Print exec --no-startup-id scrot ~/%Y-%m-%d-%T-screenshot.png && notify-send "Screenshot saved to ~/$(date +"%Y-%m-%d-%T")-screenshot.png"
+# bindsym $mod+x exec --no-startup-id scrot -s 
+# bindsym $mod+x exec --no-startup-id scrot ~/Pictures/Screenshot/%Y-%m-%d-%T-screenshot.png && notify-send "Screenshot saved to ~/$(date +"%Y-%m-%d-%T")-screenshot.png"
+bindsym $mod+x exec --no-startup-id flameshot gui
 
 # Power Profiles menu switcher (rofi)
 bindsym $mod+Shift+p exec --no-startup-id ~/.config/i3/scripts/power-profiles
@@ -424,7 +427,7 @@ exec --no-startup-id dex --autostart --environment i3
 
 # set wallpaper
 # exec --no-startup-id sleep 2 && nitrogen --restore
-exec --no-startup-id sleep 2 && feh --bg-fill ~/Pictures/soloLeveling.jpg
+exec --no-startup-id sleep 2 && feh --bg-fill ~/Pictures/Zoro-purple.jpg
 
 # set powersavings for display:
 exec --no-startup-id xset s 480 dpms 600 600 600
@@ -455,7 +458,7 @@ exec_always --no-startup-id /bin/autotiling
 
 # Autostart apps as you like
 #exec --no-startup-id sleep 2 && xfce4-terminal
-exec --no-startup-id sleep 7 && brave
+# exec --no-startup-id sleep 7 && brave
 exec --no-startup-id sleep 7 && discord
 exec --no-startup-id sleep 9 && spotify
 exec --no-startup-id sleep 11 && slack

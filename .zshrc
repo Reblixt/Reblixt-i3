@@ -66,12 +66,21 @@ alias ls='ls --color'
 alias vim='nvim'
 alias vi='nvim'
 alias tmuxit="tmux source-file ~/.tmux.conf"
-alias update="sudo apt update"
-alias upgrade='sudo apt upgrade'
-alias install="sudo apt install"
+alias update="sudo pacman -Syu"
+alias upgrade='sudo pacman -Syu'
+alias install="sudo pacman -S"
+alias tmux="tmux -2"
+alias neo="neovide . &"
 
 # Shell integration
 eval "$(fzf --zsh)"
 eval "$(zoxide init --cmd cd zsh)" 
 
 
+
+## [Completion]
+## Completion scripts setup. Remove the following line to uninstall
+[[ -f /home/carl/.dart-cli-completion/zsh-config.zsh ]] && . /home/carl/.dart-cli-completion/zsh-config.zsh || true
+## [/Completion]
+
+export PATH=$HOME/.local/bin:$PATH
