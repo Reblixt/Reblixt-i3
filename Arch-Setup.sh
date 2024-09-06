@@ -29,7 +29,7 @@ sudo pacman -S --noconfirm git bluez bluez-utils blueman
 
 echo "Installing Neovim and other packages"
 sudo pacman -S --noconfirm nodejs npm neovim fd ripgrep fzf bat btop luarocks wl-clipboard unzip
-sudo pacman -S --noconfirm zsh lazygit alacritty kitty xclip tmux zoxide
+sudo pacman -S --noconfirm zsh lazygit alacritty kitty xclip tmux zoxide glow
 
 echo "Installing Flatpak"
 sudo pacman -S --noconfirm flatpak
