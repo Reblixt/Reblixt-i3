@@ -22,7 +22,7 @@ else
 fi
 
 echo "Installing i3 and other packages"
-sudo pacman -S --noconfirm i3 thunar picom polybar rofi feh dunst cmus redshift
+sudo pacman -S --noconfirm i3 thunar picom polybar rofi feh dunst cmus redshift timeshift grub-btrfs
 
 echo "Installing Bluetooth packages"
 sudo pacman -S --noconfirm git bluez bluez-utils blueman
