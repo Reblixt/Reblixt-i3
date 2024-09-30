@@ -8,7 +8,7 @@ set -o pipefail # Prevent errors in a pipeline from being masked
 read -p "Enter your Git username: " git_username
 read -p "Enter your Git email: " git_email
 read -p "Do you have SDDM installed? (y/n): " sddm_installed
-read -p "Do you have a Nvidia GPU? (y/n): " nvidia_gpu
+# read -p "Do you have a Nvidia GPU? (y/n): " nvidia_gpu
 
 echo "Updating and upgrading system packages"
 sudo apt update && sudo apt upgrade -y
@@ -22,40 +22,43 @@ sudo apt update && sudo apt upgrade -y
 # fi
 
 echo "Installing i3 and other packages"
-sudo apt install -y i3 thunar picom polybar rofi feh dunst cmus nala nala
+sudo apt install -y i3 thunar picom polybar rofi feh dunst cmus nala 
 
 echo "Installing Bluetooth packages"
 sudo apt install -y git bluez bluez-tools blueman
+sudo add-apt-repository ppa:neovim-ppa/stable -y
 
 echo "Installing Neovim and other packages"
-sudo apt install -y neovim fd-find ripgrep fzf bat btop
+sudo apt install -y neovim fd-find ripgrep fzf bat btop nodejs npm luarocks
 sudo apt install -y zsh alacritty xclip tmux zoxide playerctl
+sudo npm i yarn neovim -g -y 
 
 echo "Installing Flatpak"
 sudo apt install -y flatpak
+flatpak remote-add --user --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 
 # echo "Installing Display packages"
 # sudo apt install -y x11-xserver-utils nvidia-settings
 
-# echo "Installing 1Password"
-# curl -sS https://downloads.1password.com/linux/keys/1password.asc | gpg --import
-# curl -sS https://downloads.1password.com/linux/debian/amd64/stable/1password-latest.deb -o 1password.deb
-# sudo apt install -y ./1password.deb
-# rm 1password.deb
+curl -sS https://downloads.1password.com/linux/keys/1password.asc | sudo gpg --dearmor --output /usr/share/keyrings/1password-archive-keyring.gpg
+echo 'deb [arch=amd64 signed-by=/usr/share/keyrings/1password-archive-keyring.gpg] https://downloads.1password.com/linux/debian/amd64 stable main' | sudo tee /etc/apt/sources.list.d/1password.list
+sudo mkdir -p /etc/debsig/policies/AC2D62742012EA22/
+curl -sS https://downloads.1password.com/linux/debian/debsig/1password.pol | sudo tee /etc/debsig/policies/AC2D62742012EA22/1password.pol
+sudo mkdir -p /usr/share/debsig/keyrings/AC2D62742012EA22
+curl -sS https://downloads.1password.com/linux/keys/1password.asc | sudo gpg --dearmor --output /usr/share/debsig/keyrings/AC2D62742012EA22/debsig.gpg
+sudo apt update && sudo apt install 1password
 
-# echo "Enabling Bluetooth service"
-# sudo systemctl enable bluetooth.service
-# sudo systemctl start bluetooth.service
-
-# echo "Installing Snap"
-# sudo apt install -y snapd
 
 # echo "Installing packages with Snap"
 # sudo snap install brave
-# sudo snap install chromium
-# sudo snap install spotify
+sudo apt install chromium-browser
 # sudo snap install discord
-#
+
+echo "Installing Spotify"
+curl -sS https://download.spotify.com/debian/pubkey_6224F9941A8AA6D1.gpg | sudo gpg --dearmor --yes -o /etc/apt/trusted.gpg.d/spotify.gpg
+echo "deb http://repository.spotify.com stable non-free" | sudo tee /etc/apt/sources.list.d/spotify.list
+sudo apt-get update && sudo apt-get install spotify-client
+
 echo "Moving nfancurve"
 mv ~/git/Reblixt-i3/nfancurve-Removethis/ ~/git/nfancurve
 
@@ -77,8 +80,10 @@ echo "Moving zsh config"
 mv ~/git/Reblixt-i3/.zshrc ~/
 
 echo "Moving nvim config"
-git clone https://github.com/Reblixt/Solidity-Nvim.git
-mv Solidity-Nvim ~/.config/nvim
+git clone https://github.com/Reblixt/Nvchad-Neovim.git 
+mv Nvchad-Neovim ~/.config/nvim
+# git clone https://github.com/Reblixt/Solidity-Nvim.git
+# mv Solidity-Nvim ~/.config/nvim
 
 echo "Making zsh the default shell"
 chsh -s $(which zsh)
