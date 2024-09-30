@@ -24,6 +24,8 @@ fi
 echo "Installing i3 and other packages"
 sudo pacman -S --noconfirm i3 thunar picom polybar rofi feh dunst cmus redshift timeshift grub-btrfs
 
+echo "For rust relatied packages"
+sudo pacman -S --noconfirm rustup lldb
 echo "Installing Bluetooth packages"
 sudo pacman -S --noconfirm git bluez bluez-utils blueman
 
@@ -82,7 +84,9 @@ mv ~/git/Reblixt-i3/.zshrc ~/
 
 echo "Moving nvim config"
 git clone https://github.com/Reblixt/Solidity-Nvim.git
-mv Solidity-Nvim ~/.config/nvim
+git clone https://github.com/Reblixt/Nvchad-Neovim.git 
+mv Nvchad-Neovim ~/.config/nvim
+
 # git clone https://github.com/Reblixt/NvimChad.git
 # mv NvimChad ~/.config/nvim.chad
 
