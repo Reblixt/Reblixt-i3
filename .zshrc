@@ -1,3 +1,5 @@
+# Add deno completions to search path
+if [[ ":$FPATH:" != *":/home/carl/.zsh/completions:"* ]]; then export FPATH="/home/carl/.zsh/completions:$FPATH"; fi
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
@@ -71,6 +73,7 @@ alias upgrade='sudo pacman -Syu'
 alias install="sudo pacman -S"
 alias tmux="tmux -2"
 alias neo="neovide . &"
+alias icat="kitten icat"
 
 # Shell integration
 eval "$(fzf --zsh)"
@@ -84,3 +87,6 @@ eval "$(zoxide init --cmd cd zsh)"
 ## [/Completion]
 
 export PATH=$HOME/.local/bin:$PATH
+export PATH="$HOME/.cargo/bin:$PATH"
+export PATH="$HOME/.local/share/solana/install/active_release/bin:$PATH"
+. "/home/carl/.deno/env"
