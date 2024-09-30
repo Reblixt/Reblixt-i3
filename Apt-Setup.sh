@@ -20,16 +20,21 @@ sudo apt update && sudo apt upgrade -y
 # else
 #   echo "Skipping Nvidia drivers installation"
 # fi
+# installs nvm (Node Version Manager)
 
 echo "Installing i3 and other packages"
-sudo apt install -y i3 thunar picom polybar rofi feh dunst cmus nala 
+sudo apt install -y i3 thunar picom polybar rofi feh dunst cmus nala curl
+
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.0/install.sh | bash
+
+nvm install 20
 
 echo "Installing Bluetooth packages"
 sudo apt install -y git bluez bluez-tools blueman
 sudo add-apt-repository ppa:neovim-ppa/stable -y
 
 echo "Installing Neovim and other packages"
-sudo apt install -y neovim fd-find ripgrep fzf bat btop nodejs npm luarocks
+sudo apt install -y neovim fd-find ripgrep fzf bat btop luarocks
 sudo apt install -y zsh alacritty xclip tmux zoxide playerctl
 sudo npm i yarn neovim -g -y 
 
