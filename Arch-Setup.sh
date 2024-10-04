@@ -9,6 +9,7 @@ read -p "Enter your Git username: " git_username
 read -p "Enter your Git email: " git_email
 read -p "Do you have SDDM installed? (y/n): " sddm_installed
 read -p "Do you have a Nvidia GPU? (y/n): " nvidia_gpu
+# read -p "Do you hyperland installed? (y/n)" hyperland
 
 echo "Updating and upgrading system packages"
 sudo pacman -Syu --noconfirm
@@ -102,6 +103,11 @@ git config --global init.defaultBranch main
 echo "Moving Tmux config"
 mv ~/git/Reblixt-i3/.tmux ~/
 mv ~/git/Reblixt-i3/.tmux.conf ~/
+
+# if [[ "$hyperland" == "y" ]]; then
+#   echo "Installing Hyperland"
+#   git clone
+#   yay -S webcord
 
 if [[ "$sddm_installed" == "y" ]]; then
 	echo "Configuring SDDM"
