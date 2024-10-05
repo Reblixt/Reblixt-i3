@@ -107,6 +107,10 @@ git config --global user.email "$git_email"
 git config --global core.editor nvim
 git config --global init.defaultBranch main
 
+echo "Installing propper fonts and icons"
+sudo pacman -S --noconfirm gnu-free-fonts noto-fonts noto-fonts-extra ttf-anonymous-pro ttf-bitstream-vera ttf-caladea ttf-carlito ttf-croscore ttf-dejavu ttf-droid ttf-eurof ttf-fira-code ttf-font-awesome ttf-hack ttf-ibm-plex ttf-inconsolata ttf-indic-otf  ttf-lato ttf-liberation ttf-monofur ttf-nerd-fonts-symbols ttf-opensans ttf-roboto ttf-roboto-mono ttf-ubuntu-font-family
+
+
 echo "Moving Tmux config"
 mv ~/git/Reblixt-i3/.tmux ~/
 mv ~/git/Reblixt-i3/.tmux.conf ~/
