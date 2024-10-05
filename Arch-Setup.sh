@@ -23,7 +23,7 @@ else
 fi
 
 echo "Installing i3 and other packages"
-sudo pacman -S --noconfirm i3 thunar picom polybar rofi feh dunst cmus redshift timeshift grub-btrfs
+sudo pacman -S --noconfirm i3 thunar picom polybar rofi feh dunst cmus redshift timeshift grub-btrfs 
 
 echo "For rust relatied packages"
 sudo pacman -S --noconfirm rustup lldb
@@ -65,7 +65,7 @@ yay -S --noconfirm autotiling brave-bin chromium spotify discord blueberry slack
 
 if [[ $hyperland == y ]]; then
   echo "Installing Hyperland"
-  yay -S --noconfirm webcord eww wofi hrofi waybar 
+  yay -S --noconfirm webcord eww wofi hrofi waybar wlsunset
   rm -rf ~/.config/eww ~/.config/wofi ~/.config/hrofi ~/.config/waybar
   mv ~/git/Reblixt-i3/config/{eww,wofi,hrofi,waybar,hypr} ~/.config
 fi
