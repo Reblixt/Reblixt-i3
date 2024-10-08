@@ -64,7 +64,7 @@ zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
 
 # Aliases 
 alias ll='ls -l'
-alias ls='ls --color'
+alias ls='lsd'
 alias vim='nvim'
 alias vi='nvim'
 alias tmuxit="tmux source-file ~/.tmux.conf"
