@@ -65,7 +65,7 @@ yay -S --noconfirm autotiling brave-bin chromium spotify discord blueberry slack
 
 if [[ $hyperland == y ]]; then
   echo "Installing Hyperland"
-  yay -S --noconfirm webcord eww wofi hrofi waybar wlsunset
+  yay -S --noconfirm webcord eww wofi hrofi waybar wlsunset hyprshot
   rm -rf ~/.config/eww ~/.config/wofi ~/.config/hrofi ~/.config/waybar
   mv ~/git/Reblixt-i3/config/{eww,wofi,hrofi,waybar,hypr} ~/.config
 fi
