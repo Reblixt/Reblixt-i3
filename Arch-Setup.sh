@@ -23,7 +23,7 @@ else
 fi
 
 echo "Installing i3 and other packages"
-sudo pacman -S --noconfirm i3 thunar picom polybar rofi feh dunst cmus redshift timeshift grub-btrfs 
+sudo pacman -S --noconfirm i3 thunar picom polybar rofi feh dunst cmus redshift timeshift grub-btrfs starship
 
 echo "For rust relatied packages"
 sudo pacman -S --noconfirm rustup lldb
@@ -80,7 +80,7 @@ echo "Cleaning up old configs"
 rm -rf ~/.config/i3 ~/.config/polybar ~/.config/rofi ~/.config/kitty ~/.config/picom.conf ~/.config/alacritty
 
 echo "Moving new configs"
-mv ~/git/Reblixt-i3/config/{i3,rofi,polybar,kitty,picom.conf,alacritty,catppuccin,dunst} ~/.config
+mv ~/git/Reblixt-i3/config/{i3,rofi,polybar,kitty,picom.conf,alacritty,catppuccin,dunst,starship.toml} ~/.config
 chmod +x ~/.config/catppuccin/scripts/cava.sh
 chmod +x ~/.config/catppuccin/scripts/cmus.sh
 chmod +x ~/.config/catppuccin/scripts/powermenu.sh
