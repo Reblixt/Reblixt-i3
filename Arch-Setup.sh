@@ -41,6 +41,9 @@ sudo pacman -S --noconfirm flatpak
 echo "Installing Display packages"
 sudo pacman -S --noconfirm xorg-xrandr nvidia-settings nvidia-utils
 
+echo "Installing Brew"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
 echo "Installing 1Password"
 curl -sS https://downloads.1password.com/linux/keys/1password.asc | gpg --import
 git clone https://aur.archlinux.org/1password.git
