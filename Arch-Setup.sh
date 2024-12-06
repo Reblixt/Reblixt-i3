@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 
-set -e          # Exit immediately if a command exits with a non-zero status
-set -u          # Treat unset variables as an error and exit immediately
-set -o pipefail # Prevent errors in a pipeline from being masked
+# set -e          # Exit immediately if a command exits with a non-zero status
+# set -u          # Treat unset variables as an error and exit immediately
+# set -o pipefail # Prevent errors in a pipeline from being masked
 
 # Prompt for Git configuration details
 read -p "Enter your Git username: " git_username
@@ -26,7 +26,7 @@ echo "Installing i3 and other packages"
 sudo pacman -S --noconfirm i3 thunar picom polybar rofi feh dunst cmus redshift timeshift grub-btrfs starship
 
 echo "For rust relatied packages"
-sudo pacman -S --noconfirm rustup lldb
+sudo pacman -S --noconfirm lldb
 echo "Installing Bluetooth packages"
 sudo pacman -S --noconfirm git bluez bluez-utils blueman
 
