@@ -1,0 +1,69 @@
+
+# keybindings
+#keybind = action+a=new_tab
+
+keybind = super+ö>n=new_tab
+keybind = super+ö>l=next_tab
+keybind = super+ö>h=previous_tab
+keybind = super+ö>d=close_surface
+keybind = super+ö>r=reload_config
+keybind = super+ö>f=toggle_fullscreen
+keybind = super+ö>i=inspector:toggle
+
+# Splits
+keybind = super+ö>s=new_split:right
+keybind = super+ö>-=new_split:down
+keybind = ctrl+shift+h=goto_split:left
+keybind = ctrl+shift+j=goto_split:bottom
+keybind = ctrl+shift+k=goto_split:top
+keybind = ctrl+shift+l=goto_split:right
+
+mouse-hide-while-typing = true
+
+window-padding-balance = true
+font-family = FiraCode Nerd Font Mono SemBd
+# theme =  catppuccin-mocha
+theme = kanagawabones
+font-size = 15
+window-theme = ghostty 
+window-colorspace = "display-p3"
+gtk-titlebar = true
+adjust-cell-height = 5% 
+background-opacity = 0.96
+auto-update = check 
+
+window-padding-x = 5
+window-padding-y = 5
+
+macos-titlebar-style = transparent
+window-decoration = false
+
+#FiraCode Nerd Font
+#  FiraCode Nerd Font Bold
+#  FiraCode Nerd Font Bold
+#  FiraCode Nerd Font Light
+#  FiraCode Nerd Font Light
+#  FiraCode Nerd Font Med
+#  FiraCode Nerd Font Med
+#  FiraCode Nerd Font Reg
+#  FiraCode Nerd Font Reg
+#  FiraCode Nerd Font Ret
+#  FiraCode Nerd Font Ret
+#  FiraCode Nerd Font SemBd
+#  FiraCode Nerd Font SemBd
+#
+#FiraCode Nerd Font Mono
+#  FiraCode Nerd Font Mono Bold
+#  FiraCode Nerd Font Mono Light
+#  FiraCode Nerd Font Mono Med
+#  FiraCode Nerd Font Mono Reg
+#  FiraCode Nerd Font Mono Ret
+#  FiraCode Nerd Font Mono SemBd
+#
+#FiraCode Nerd Font Propo
+#  FiraCode Nerd Font Propo Bold
+#  FiraCode Nerd Font Propo Light
+#  FiraCode Nerd Font Propo Med
+#  FiraCode Nerd Font Propo Reg
+#  FiraCode Nerd Font Propo Ret
+#  FiraCode Nerd Font Propo SemBd
