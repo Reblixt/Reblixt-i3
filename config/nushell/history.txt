@@ -1,0 +1,1180 @@
+foundry
+forge
+movement
+sui
+ls
+lsd
+ls
+cd coding
+ls
+cd Coding/
+ls
+cd Neoki/
+starship
+cd .config
+ls
+vi starship.toml
+ls *.toml
+ll
+ls -l
+ls
+ls mu
+$nu.env-path
+cd nushell/
+ls
+vi .
+nvi m.
+nvim .
+cod
+$env.EDITOR = nvim
+$env.EDITOR = ^nvim
+$env.EDITOR = "nvim"
+$env
+anvil
+ll
+ls -l
+ll
+cd nushell/
+mkdir ~/.cache/starship<\n>starship init nu | save -f ~/.cache/starship/init.nu
+cd nushell/
+cd .config
+cd
+cd Coding/Neoki/
+ls
+cd contracts/
+cd coding
+cd Coding/
+ls
+cd Neoki/
+cd contracts/
+cd
+cd contracts/
+source ~/.zoxide.nu
+cd
+cd contracts/
+$nu.env-path
+sudo pacman -S zoxide
+cd contracts
+cd Coding/
+ls
+cd Coding/Neoki/
+ls
+cd contracts
+ls
+cd
+cd en
+cd contracts
+cd
+ls
+cd Downloads/
+ls
+cd 
+ls
+cd Downloads/
+mv no-runtime-versions.toml ~/.cache/
+ls
+cd 
+cd .cache/
+ls
+ls *.toml
+mv no-runtime-versions.toml starship/
+ls
+cd starship/
+ls
+vi .
+cd
+nvim .
+curl -X POST https://fullnode.mainnet.sui.io:443 \<\n>-H "Content-Type: application/json" \<\n>-d '{<\n>  "jsonrpc": "2.0",<\n>  "id": 1,<\n>  "method": "suix_queryEvents",<\n>  "params": [<\n>    {<\n>      "MoveModule": {<\n>        "package": "0x158f2027f60c89bb91526d9bf08831d27f5a0fcb0f74e6698b9f0e1fb2be5d05",<\n>        "module": "deepbook_utils",<\n>        "type": "0xdee9::clob_v2::DepositAsset<0x5d4b302506645c37ff133b98c4b50a5ae14841659738d6d733d59d0d217a93bf::coin::COIN>"<\n>      }<\n>    },<\n>    null,<\n>    3,<\n>    false<\n>  ]<\n>}'
+curl 
+exit
+ls
+nest 
+forge
+ft
+cd sui-contract
+cd Coding/Neoki/sui-contracts/
+ls
+cd market_kiosk/
+sui move build
+chsh -s $(which nu)
+cat /etc/shells<\n>
+chsh -s $(nu)
+chsh -s nu
+chsh -s which nu
+which nu
+chsh -s /usr/bin/nu
+sudo chsh -s /usr/bin/nu
+ls
+echo $SHELL
+echo $env.SHELL
+sudo chsh -s /usr/bin/nu
+ls
+ft
+forge
+anvil
+git
+ls
+z 
+cd i3
+config nu
+vi .
+v .
+forge
+curl -L https://foundry.paradigm.xyz | bash<\n>
+cd .config
+ls
+cd nushell/
+ls
+cd nushell/
+forge
+zoxide
+z
+ff
+forge
+cd .cargo/
+ls
+cargo 
+sui move 
+cd .sui
+lss
+ls
+vi .
+cd
+sui-prettier
+prettier-sui
+brew
+cd /home/linuxbrew/
+ls
+cd ..
+ls
+cd linuxbrew/
+ls
+cd ..
+ls
+cd linuxbrew/
+cd .linuxbrew/
+ls
+brew
+cd /home/linuxbrew/.linuxbrew/
+ls
+cd bin
+ls
+cd sui
+cd
+cd sui-contract
+which zoxide
+zoxide
+z
+cd sui-contract
+cd Coding/Neoki/sui-contracts/
+cd market_kiosk/
+sui move build
+node -v
+nest
+vercel
+forge
+z Coding/
+z
+z Coding/
+z
+zoxide
+cd market_kiosk/
+cd .config/zshrc/
+ls
+forge
+cargo
+nushell
+zoxide init nushell
+nu -v
+z Coding/
+cd
+vi .zoxide.nu
+cd Coding/
+z Dece-Credit-score/
+cd
+z Dece-Credit-score/
+cd
+ll
+su
+ls
+cd
+z Dece-Credit-score/
+cd
+z Dece-Credit-score/
+z
+cd Coding/
+ft
+z Coding/Hokko/hokko-backend-prototype/
+ls
+vi .
+z hokko-backend-prototype
+vi .
+plugin list
+docker
+c
+schema
+solana
+ga
+gs
+ga
+c
+vi .
+cd Coding/
+cd Dece-Credit-score/
+cd
+cd Dece-Credit-score/
+z nuschell
+z nu
+cd
+cd .config/nushell/
+ls
+z Dece-Credit-score/
+cd Dece-Credit-score/
+cargo install nu_plugin_highlight
+which nu_plugin_highlight
+plugin add /home/carl/.cargo/bin/nu_plugin_highlight
+plugin use highlight
+plugin list
+nufetch
+ls
+c
+cd
+nu nufetch.nu "Arch Linux"
+n
+cd git
+git clone git@github.com:Sanceilaks/nufetch.git
+cd nufetch/
+ls
+mv nufetch.nu ~/.config/nushell/
+ls
+cd ..
+rm -r nufetch/
+ls
+cd
+cd nushell/
+cd .config
+cd nushell/
+ls
+vi .zoxide.nu
+vi .
+nu nufetch.nu "Arch Linux"
+cd nushell/
+cd nushell
+nu nufetch.nu "Arch Linux"
+vi .
+nu nufetch.nu "Arch"
+nu nufetch.nu
+nu nufetch.nu arch
+nu nufetch.nu Arch
+vi .
+nu nufetch.nu "Arch Linux"
+nu nufetch.nu --fake "Arch Linux"
+nu nufetch.nu --fake "Arch"
+nu nufetch.nu --fake
+nu nufetch.nu
+nu nufetch.nu "Arch"
+yay -S nufetch
+nufetch
+yay -R nufetch
+nufetch
+nufetch arch
+nufetch Arch
+yay -R nufetch-git
+nufetch
+nufetch
+nu nufetch.nu
+nu nufetch.nu --fake
+nu nufetch.nu 
+vi .
+tmux
+cd sui-contract
+xprop
+cd i3
+cd
+cd .config/i3
+ls
+vi ~/notes/Hokko/Todos.md
+xprop
+vi .
+yarn prisma generate
+yarn lint
+yarn build
+yarn prisma generate
+yarn build
+yarn
+yarn de
+yarn build
+vi .
+yarn dev
+cd sui-contract
+cd hokko-f
+vi .
+cd luckykat
+cd sui-contract
+vi .
+vi .
+sui move build
+cd market_kiosk/
+sui move build
+sui move test
+vi .
+cd Neoki/
+cd ..
+cd contracts/
+yarn
+vi .
+yarn
+cd sui-contract
+yarn build
+yarn lint
+cd market_kiosk/
+sui move build
+sui move test
+yarn build
+yarn dev
+yarn prisma generate
+c
+exet
+vi .
+yarn prisma migrate reset
+yarn start:dev
+docker compose up
+yarn dev
+yarn prisma generate
+yarn prisma db push
+yarn build
+yarn start:dev
+yarn prisma generate
+yarn prisma migrate reset
+yarn prisma generate
+yarn prisma migrate dev
+yarn dev
+he
+yarn build
+yarn build
+cd sui-contract
+cd market_kiosk/
+sui client publish -gas-limmit 150000000
+sui client publish --gas-limmit 150000000
+sui client publish --gas 150000000
+sui client publish 
+yarn dev
+yarn build
+yarn lint
+yarn build
+yarn lint
+vi .
+yarn
+yarn build
+yarn
+yarn prisma generate
+yarn prisma migrate dev
+yarn prisma db push
+yarn prisma migrate deploy
+docker compose up
+yarn dev
+c
+yarn dev
+c
+yarn dev
+vi .
+tmux
+vi .
+yarn
+yarn start:dev
+yarn prisma db pull
+yarn prisma generate
+yarn prisma migrate diff
+ls
+mkdir -p prisma/migrations/0_init
+mkdir  prisma/migrations/0_init
+cd prisma/migrations/
+ls
+npx prisma migrate diff \<\n>--from-empty \<\n>--to-schema-datamodel prisma/schema.prisma \<\n>--script > prisma/migrations/0_init/migration.sql
+npx prisma migrate diff <\n>--from-empty <\n>--to-schema-datamodel prisma/schema.prisma <\n>--script > prisma/migrations/0_init/migration.sqln
+npx prisma migrate diff --from-empty --to-schema-datamodel prisma/schema.prisma --script > prisma/migrations/0_init/migration.sqln
+ls
+cd ..
+ls
+npx prisma migrate diff --from-empty --to-schema-datamodel prisma/schema.prisma --script > prisma/migrations/0_init/migration.sqln
+npx prisma migrate diff --from-empty --to-schema-datamodel prisma/schema.prisma --script e> prisma/migrations/0_init/migration.sqln
+npx prisma migrate diff --from-empty --to-schema-datamodel prisma/schema.prisma --script o> prisma/migrations/0_init/migration.sqln
+vi
+yarn dev
+docker compose up
+cd sui-contract
+sui client publish 
+cd market_kiosk/
+ls
+sui move build
+sui move test
+sui client publish 
+vi .
+sui move build
+cd market_kiosk/
+sui move build
+sui move test
+cd market_kiosk/
+sui move test
+sui move build
+vi .
+cd market_kiosk/
+ls
+sui client publish 
+yarn start:dev
+vi .
+yarn prisma generate
+yarn build
+cd market_kiosk/
+cd market_kiosk
+yarn prisma generate
+yarn build
+yarn prisma migrate dev --name init
+yarn dev
+yarn lint
+yarn build
+vi ~/notes/Hokko/Todos.md
+vi .
+vi .
+tmux
+cd market_kiosk
+vi .
+cd luckykat
+vi .
+cd hokko-f
+cd dec
+vi .
+vi .
+yarn lint
+cd market_kiosk
+yarn dev
+yarn lint
+yarn build
+yarn prisma migrate deploy
+yarn prisma migrate deploy --name init
+yarn prisma migrate dev --name init
+yarn prisma migrate deploy
+vi .
+tmux
+yarn
+cd Hokko
+cd ..
+ls
+mkdir microbin
+cd microbin/
+touch compose.yaml
+cd market_kiosk
+vi .
+cd market_kiosk
+yarn lint
+yarn build
+yarn dev
+yarn build
+yarn dev
+vi .
+c
+nest g module scam-list
+vi .
+nest g module scam-list
+nest g controller scam-list
+nest g service scam-list
+vi .
+yarn prisma generate
+yarn start:dev
+yarn prisma generate
+cd Coding/
+ls
+forge init withdraw --force --no-commit
+cd withdraw/
+forge build
+forge install OpenZeppelin/openzeppelin-contracts --no-commit
+vi .
+cd
+cd Neoki
+cd contracts/
+forge test
+forge test -vvvv
+test_sendTokens -vvvvv
+ft test_sendTokens -vvv
+ft test_sendTokens -vvvv
+forge test --mt test_sendTokens
+forge test
+forge test --mt test_sendTokens
+forge test --mt test_sendTokens -vvvv
+forge test --mt test_recieveTokens
+c
+forge test
+vi .
+yarn prisma db push
+vi ~/notes/Hokko/Todos.md
+vi .
+yarn start:dev
+docker compose up
+vi .
+yay -S activitywatch-bin 
+cd sui-contract
+aw-qt
+cd .config/i3
+vi 
+vi .
+vi .
+sudo reboot
+cd sui-contract
+sui move test
+cd market_kiosk
+sui move build
+sui move test
+vi .
+sui move test
+cd market_kiosk
+sui move test
+c
+sui client publish 
+yarn lint
+yarn dev
+yarn build
+yarn prisma migrate deploy
+yarn prisma generate
+yarn build
+yarn prisma migrate status
+yarn prisma migrate dev
+yarn prisma migrate resolve
+yarn prisma migrate deploy
+yarn prisma db pull
+yarn prisma migrate status
+yarn prisma migrate deploy
+yarn prisma db pull
+yarn dev
+yarn
+yarn dev
+yarn lint
+yarn build
+vi .
+yarn dev
+cd market_kiosk
+sui client env
+sui client envv
+sui client envs
+yarn dev
+tmux
+vi .
+cd .config/polybar/
+aw-qt
+pkill aw-qt
+aw-qt
+vi .
+cd ../i3
+aw-qt &
+aw-qt --help
+aw-qt --testing
+aw-qt --help
+aw-qt --autostart-modules
+aw-qt --i
+aw-qt -i
+aw-qt --help
+vi .
+i3-msg restart
+aw-qt
+i3-msg exit
+vi
+vi .tmux.conf
+source .tmux.conf
+pkill aw-qt
+yarn dev
+vi .
+vi .
+tmux
+aw-qt
+pkill aw-qt
+cd ../i3
+cd i3
+vi .
+i3-msg exit
+aw-qt 
+sudo reboot
+cd sui-contract
+yarn lint
+yarn dev
+yarn build
+yarn start
+yarn lint
+lazygit
+curl -fsSL https://bun.sh/install | bash
+bun --help
+cd nushell
+bun --help
+vi .
+cd Playground/
+ls
+rm -fr antonio/
+bun create next-app
+cd my-bun-app/
+bun add @mysten/dapp-kit @mysten/sui @tanstack/react-query
+vi .
+bun add prisma
+bun dev
+vi .
+cd ..
+rm -fr my-bun-app/
+ls
+yarn bulid
+yarn build
+vi .
+cd Coding/
+nvim .
+vi .
+git clone git@github.com:NeokiDeMa/hokko-frontend-prototype.git
+cd hokko-frontend-prototype/
+vi .
+bun install
+vi .
+bun install
+bun add react
+bun add react-dom
+bun dev
+bun add zod
+bun dev
+vi .
+bun dev
+vi .
+bun build
+bun run build
+vi
+bun run start
+bun install
+vi .
+tmux
+bun --help
+cd hokko-frontend-prototype/
+cd hokko-frontend-prototype
+bun install
+bun dev
+cd hokko-frontend-prototype
+cd hokko-ba
+bun dev
+cd hokko-ba
+c
+c
+c
+vi .
+lazygit
+sui client pay-sui --help
+sui client pay-sui --recipients 0x51648af1793cbdae78908d2781f4fd3760c20554c0fa8d0a87e283f80dc7b475 --amounts 1000000000
+sui client balance
+sui client split-coin --help
+sui client transfer-sui --help
+sui client transfer-sui --to 0x51648af1793cbdae78908d2781f4fd3760c20554c0fa8d0a87e283f80dc7b475 --amount 1000000000
+sui client object
+sui client object --help
+sui client gas
+sui client transfer-sui --to 0x51648af1793cbdae78908d2781f4fd3760c20554c0fa8d0a87e283f80dc7b475 --amount 1000000000 --sui-coin-object-id 0x4259ffdc3715fed6e80b0915897b9edb3423f9f41d6bfa282272b924602b479f
+sui client transfer-sui --to 0x51648af1793cbdae78908d2781f4fd3760c20554c0fa8d0a87e283f80dc7b475 --amount 100000000 --sui-coin-object-id 0x4259ffdc3715fed6e80b0915897b9edb3423f9f41d6bfa282272b924602b479f
+sui client transfer-sui --to 0x51648af1793cbdae78908d2781f4fd3760c20554c0fa8d0a87e283f80dc7b475 --amount 1 --sui-coin-object-id 0x4259ffdc3715fed6e80b0915897b9edb3423f9f41d6bfa282272b924602b479f 
+sui client transfer-sui --to 0x51648af1793cbdae78908d2781f4fd3760c20554c0fa8d0a87e283f80dc7b475 --amount 1000000000 --sui-coin-object-id 0x4259ffdc3715fed6e80b0915897b9edb3423f9f41d6bfa282272b924602b479f --gas-budget 10000000
+bun dev
+cd sui-contract
+vi .
+vi 
+v i.
+vi .
+vi .
+cd market_kiosk/
+sui move build
+bun add decimal.js
+cd hokko-frontend-prototype
+bun add decimal.js
+sui client publish
+cd market_kiosk/
+sui client publish
+yarn build
+vi .
+yarn
+yarn dev
+yarn lint
+yarn 
+yarn lint
+yarn build
+yarn
+yarn lint
+yarn build
+yarn 
+yarn lint
+vi .
+vi .
+bun dev
+cd Playground/
+git clone git@github.com:NeokiDeMa/hokko-backend-prototype.git
+cd hokko-backend-prototype/
+vi .
+cd hokko-backend-prototype
+vi .
+cd Playground/hokko-backend-prototype/
+bun install
+bun pm untrusted
+bun pm trust
+bun run start:dev
+vi .
+bun install
+vi .
+bun install
+bun run start:dev
+docker compose up
+vi .
+bun install
+bun install
+bun add react-dom
+bun add react
+bun run start:dev
+cd market_kiosk
+sui move build
+sui move test
+bun prisma genarate
+bun prisma generate
+bun install
+sui move test
+vi .
+sui client publish
+bun run start:dev
+bun dev
+cd market_kiosk
+vi .
+sui client publish
+sui move test
+vi .
+bun lint
+bun run build
+vi .
+vi .
+tmux
+aw-qt 
+cd market_kiosk
+cd hokko-frontend-prototype
+vi .
+sui move build
+cd Hokko
+ls
+cd..
+ls
+cd ..
+ls
+git clone git@github.com:NeokiDeMa/hokko-marketplace-contract.git
+cd hokko-marketplace-contract/
+cd sui-contract
+ls
+cp -r market_kiosk ~/Coding/Hokko/hokko-marketplace-contract/
+ls
+mv market_kiosk contract
+ls
+sui move build
+cd contract/
+sui move build
+vi .
+git add .
+git commit -m "first commit for public repo"
+git push
+cd sui-contract
+vi .
+gh pr checkout 27
+cd market_kiosk/
+sui move build
+sui move test
+vi .
+cd Hokko
+cd ..
+cd hokko-marketplace-contract/
+ls
+rm -fr contract/
+lazygit
+vi .
+cp -r market_kiosk ~/Coding/Hokko/hokko-marketplace-contract/
+ls
+mv market_kiosk contract
+ls
+cd contract/
+ls
+sui move build
+ls
+sui move test
+vi .gitignore
+vi .
+lazygit
+lazyg
+lazygit
+vi .
+vi .
+cd sui-contract
+vi .
+cd suien
+cd sui-contract
+vi .
+bun lint
+bun run build
+bun dev
+bun duv
+bun prisma generate
+bun run build
+bun prisma generate
+bun run build
+bun prisma migrate dev profile-details
+bun prisma migrate deploy
+bun lint
+bun run build
+bun dev
+bun duv
+bun prisma generate
+bun prisma migrate dev profile-details
+sudo npm i -g prettier @mysten/prettier-plugin-move
+brew install jesseduffield/lazydocker/lazydocker
+bun dev
+docker compose up
+cd i3
+vi .
+cd
+cd .config/i3
+ls
+vi .
+bun run start:dev
+bun prisma db push
+bun run build
+brew install jesseduffield/lazydocker/lazydocker
+brew install sui
+sudo npm i -g prettier @mysten/prettier-plugin-move
+cd sui-contract
+bun dev
+vi .
+vi .
+tmux
+vi .
+ollama run deepseek-r1:14b
+bun lint
+bun run build
+bun dev
+bun lint
+vi .
+gh pr checkout 85
+vi .
+cd luckykat
+ls
+cd ..
+ls
+vi .
+git clone git@github.com:NeokiDeMa/lucky-kat-telegram-mini-app.git
+cd lucky-kat-telegram-mini-app/
+yarn 
+yarn set version 4.6.0
+vi .
+docker compose up
+tmux
+cd lucky-kat-telegram-mini-app/
+cd lucky-kat-telegram-mini-app
+ls
+cd packages/
+cd server/
+ls
+vi .
+yarn start:dev
+yarn
+yarn start:dev
+yarn prisma generate
+cd packages/server/
+yarn prisma generate
+cd packages/web-client/
+ls
+yarn dev
+bun dev
+yarn
+yarn dev
+cd ../../
+web-client:dev
+yarn web-client:dev
+docker compose up
+cd ..
+yarn add @sentry/utils
+yarn web-client:dev
+cd packages/web-client/
+yarn add @sentry/utils
+cd ../../
+yarn web-client:dev
+cd packages/web-client/
+yarn add axios
+yarn dev
+yarn server:dev
+yarn
+yarn add prisma
+cd packages/server/
+yarn add prisma
+yarn
+cd ../../
+yarn start:dev
+vi .
+tmux
+cd ..
+rm -fr lucky-kat-telegram-mini-app/
+cd lucky-kat-telegram-mini-app
+cd
+bun dev
+vi .
+tmux
+tmum
+tmux
+pkill tmux
+vi .
+cd hokko-backend-prototype
+bun prisma generate
+bun run build
+bun prisma generate
+bun prisma db push
+bun prisma generate
+bun prisma db push
+bun prisma db reset
+bun prisma db push
+bun run start:dev
+docker compose up
+bun prisma generate
+bun prisma migrate deploy
+bun run build
+bun run build
+bun lint
+bun prisma migrate deploy
+bun prisma migrate dev dynamic-nft
+bun prisma migrate deploy
+bun run start:dev
+bun prisma migrate dev
+bun prisma migrate deploy
+bun install
+bun add @mysten/sui @mysten/kiosk
+vi .
+bun install
+lazygit
+vi .
+bun dev
+bun prisma generate
+bun run buil
+bun run build
+bun lint
+bun prisma migrate dev 
+bun prisma migrate deploy
+bun prisma db push
+bun prisma generate
+bun prisma db push
+bun prisma generate
+bun prisma db push
+bun run start:dev
+bun prisma generate
+bun run build
+bun lint
+bun prisma migrate dev socials
+vi ~/notes/Hokko/Todos.md
+vi .
+tmux
+cd hokko-frontend-prototype
+bun run build
+bun run start
+bun dev
+bun run build
+bun start
+vi .
+cd sui-contract
+vi .
+cd market_kiosk/
+ls
+mv scripts ../
+cd ..
+cd hokko-backend-prototype
+sui client envs
+sui client address
+sui client addresses
+vi .
+cd sui-contract
+ls
+cd scripts/
+ls
+c
+./set_admin.sh
+sh set_admin.sh
+ls
+sh set_personalFee.sh
+vi .
+cd sui-contract
+cd market_kiosk/
+vi .
+cd ..
+cd market_kiosk
+ls
+sui client publish
+cd market_kiosk
+vi .
+vi .
+cd ..
+bun dev
+c
+vi .
+bun dev
+sh set_personalFee.sh
+ls
+sh set_personalFee.sh
+cd sui-contract
+vi .
+tmux
+vi .
+yay -Syu
+sudo reboot
+sudo pacman -S podman
+podman --help
+cd Playground/
+ls
+mkdir podmanTest
+cd podmanTest/
+podman search postgres
+podman search docker.io/postgres
+podman search docker.io/turso
+podman search postgres
+podman search turso
+podman search database
+podman --help
+podman generate
+ls
+podman generate --help
+podman generate kube
+podman generate 
+podman generate kube
+podman create
+podman create postgres
+ls
+podman create generate postgres
+podman create generate postgres-pod
+cd hokko-backend-prototype
+podman search docker.io/postgres
+vi .
+podman run docker-compose.yml
+podman
+podman start
+podman start docker-compose.yml
+podman image list
+podman image pull postgres
+podman image pull alpine
+podman image search --filter=is-official 
+podman image search --filter=is-official --format json alpine
+podman image search --filter=is-official --format alpine
+podman image search --filter=is-official --format json alpine
+podman image search postgres
+podman image search alpine
+podman ls
+podman ps
+podman logs
+cd podmanTest
+podman pull docker.io/library/postgres:15
+ls
+podman ps
+podman --help
+podman generate kube postgres
+podman images
+podman generate kube 5eac2c73de97
+podman create docker.io/library/postgres
+ls
+podman run docker.io/library/postgres
+flatpak install --user flathub io.podman_desktop.PodmanDesktop
+flatpax
+flatpak
+flathub
+cd Playground/
+ls
+git clone git@github.com:NeokiDeMa/lucky-kat-telegram-mini-app.git
+cd lucky-kat-telegram-mini-app/
+vi .
+docker compose up
+podman --help
+podman build docker-compose.yml
+yarn build
+yarn
+yarn build
+docker compose up
+tmux
+gh pr checkout 93
+lazygit
+gh pr checkout 93
+vi .
+bun dev
+iv .
+cd
+cd hokko-backend-prototype
+c
+vi .
+cd hokko-frontend-prototype
+vi .
+cd
+vi ~/notes/Hokko/Todos.md
+cd hokko-frontend-prototype
+vi .
+cd hokko-backend-prototype
+bun dev
+vi .
+cd hokko-frontend-prototype
+cd sui-contract
+bun prisma generate
+bun prisma db push
+bun run start:dev
+vi .
+cd
+cd hokko-backend-prototype
+vi .
+bun run start:dev
+cd sui-contract
+docker compose up
+bun install
+bun run start:dev
+vi .
+cd sui-contract
+cd scripts/
+ls
+sh set_personalFee.sh
+cd ../market_kiosk/
+sui move build
+sui move test
+sui move build
+sui move test
+vi .
+cd market_kiosk/
+sui move test
+sui move test --trace
+sui move test --trace-execution
+sui move build
+sui client upgrade --upgrade-capability 0x9800712f5085c7b0594b23c1387423c602cd34f35d09bdd80069bcffb6e22396
+sui manage-package
+sui client manage-package
+sui manage-package
+sui --help
+sui move manage-package
+sui move manage-package --original-id 0xc4863ad88d7869b2f148ee9b8414c1f8024dcb90e2d841f882242ff797acba5c --version-number 1
+sui move manage-package --original-id 0xc4863ad88d7869b2f148ee9b8414c1f8024dcb90e2d841f882242ff797acba5c --version-number 1 --latest-id 0xc4863ad88d7869b2f148ee9b8414c1f8024dcb90e2d841f882242ff797acba5c --network-id 1 --environment mainnet
+sui client upgrade --upgrade-capability 0x9800712f5085c7b0594b23c1387423c602cd34f35d09bdd80069bcffb6e22396
+cd market_kiosk/
+sui client upgrade --upgrade-capability 0x9800712f5085c7b0594b23c1387423c602cd34f35d09bdd80069bcffb6e22396
+sui client upgrade
+sui client upgrade --upgrade-capability 0x9800712f5085c7b0594b23c1387423c602cd34f35d09bdd80069bcffb6e22396
+vi .
+cd market_kiosk/
+ls
+sui client publish
+cd ..
+cd scripts/
+ls
+sh set_admin.sh
+sh set_personalFee.sh
+bun dev
+vi .
+vi .
+cd
+cd .config
+ls
+cd 
+cd Reblixt
+cd .config
+cd config/
+cp redshift.conf ~/.config/
+vi .
+cd .config
+cp -r ghostty ~/git/Reblixt-i3/config/
+cd
+cp .tmux.conf git/Reblixt-i3/
+cd .config
