@@ -66,6 +66,9 @@ rm -rf yay
 echo "Installing packages with yay"
 yay -S --noconfirm autotiling brave-bin chromium spotify discord blueberry slack-desktop ttf-symbola noto-fonts-cjk noto-fonts-emoji ttf-twemoji telegram-desktop zen-browser-bin flameshot
 
+echo "Installing Posting"
+curl -LsSf https://astral.sh/uv/install.sh | sh
+
 if [[ $hyperland == y ]]; then
   echo "Installing Hyperland"
   yay -S --noconfirm webcord eww wofi hrofi waybar wlsunset hyprshot hyprlock wlogout

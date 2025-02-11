@@ -105,9 +105,10 @@ use std "path add"
   path add ($env.HOME | path join ".foundry" "bin")
   path add ($env.HOME | path join ".cargo" "bin")
   path add ($env.HOME | path join ".local/share/solana/install/active_release" "bin")
+  path add ($env.HOME | path join ".local" "bin")
 #  $env.PATH = ($env.PATH | append "~/.cargo/bin")
   $env.PATH = ($env.PATH | append "/home/linuxbrew/.linuxbrew/bin")
-  $env.ANTHROPIC_API_KEY = ""
+#  $env.ANTHROPIC_API_KEY = ""
 # To load from a custom file you can use:
 # source ($nu.default-config-dir | path join 'custom.nu')
 # zoxide init nushell | save -f ~/.zoxide.nu
