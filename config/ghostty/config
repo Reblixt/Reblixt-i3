@@ -13,6 +13,11 @@ keybind = super+ö>i=inspector:toggle
 # Splits
 keybind = super+ö>s=new_split:right
 keybind = super+ö>-=new_split:down
+# keybind = ctrl+h=goto_split:left
+# keybind = ctrl+j=goto_split:bottom
+# keybind = ctrl+k=goto_split:top
+# keybind = ctrl+l=goto_split:right
+
 keybind = ctrl+shift+h=goto_split:left
 keybind = ctrl+shift+j=goto_split:bottom
 keybind = ctrl+shift+k=goto_split:top
@@ -27,13 +32,14 @@ theme = kanagawabones
 font-size = 15
 window-theme = ghostty 
 window-colorspace = "display-p3"
-gtk-titlebar = true
+# gtk-titlebar = true
 adjust-cell-height = 5% 
 background-opacity = 0.96
 auto-update = check 
 
 window-padding-x = 5
 window-padding-y = 5
+# window-height = 1
 
 macos-titlebar-style = transparent
 window-decoration = false

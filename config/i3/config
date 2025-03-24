@@ -73,6 +73,31 @@ exec --no-startup-id ~/git/nfancurve/temp.sh
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
+# Scratchpad
+# To make the Spotify scratchpad window bigger, you can add a resize command using `for_window`. Add this line to your i3 config:
+
+for_window [class="floating"] floating enable, resize set 1800 1000
+
+for_window [class="Spotify"] resize set 1800 1000
+for_window [title="~> vi"] floating enable, resize set 1800 1000
+# for_window [title="vi ~/notes/Hokko/Todos.md"] floating enable, resize set 1800 1000
+
+bindsym $mod+s [class="Spotify"] scratchpad show; move position center
+bindsym $mod+Shift+s [class="Slack"] scratchpad show; move position center
+bindsym $mod+Shift+t [title="~> vi"] scratchpad show; move position center
+# bindsym $mod+Shift+t [title="vi ~/notes/Hokko/Todos.md"] scratchpad show; move position center
+exec_always --no-startup-id spotify
+exec_always --no-startup-id slack
+exec_always --no-startup-id ghostty -e vi ~/notes/Hokko/Todos.md'
+
+
+bindsym $mod+g move scratchpad
+bindsym $mod+Shift+g scratchpad show 
+# bindsym $mod+e [class="vi"] scratchpad show; move position center
+# exec_always --no-startup-id pgrep -f '^ghostty --class vi ~/notes/Hokko/Todos.md, -e nvim ~/notes/Hokko/Todos.md' || ghostty --class vi ~/notes/Hokko/Todos.md, -e nvim ~/notes/Hokko/Todos.md  
+# exec_always --no-startup-id ghostty --class vi, -e nvim ~/notes/Hokko/Todos.md  
+
+
 # switch/iterate between workspaces
 bindsym $mod+Tab workspace next
 bindsym $mod+Shift+Tab workspace prev
@@ -179,14 +204,15 @@ bindsym $mod+r mode "resize"
 ######################################
 
 # start a terminal
-bindsym $mod+Return exec --no-startup-id kitty
+bindsym $mod+Return exec --no-startup-id ghostty
+# bindsym $mod+Return exec --no-startup-id kitty
 #xfce4-terminal
 
 # kill focused window
 bindsym $mod+q kill
 
 # exit-menu
-bindsym $mod+Shift+e exec --no-startup-id ~/.config/catppuccin/scripts/powermenu.sh
+bindsym $mod+Control+q exec --no-startup-id ~/.config/catppuccin/scripts/powermenu.sh
 
 # Lock the system
 # lock with a picture:
@@ -247,9 +273,9 @@ bindsym $mod+Right move right
 bindsym $mod+f fullscreen toggle
 
 # change container layout (stacked, tabbed, toggle split)
-bindsym $mod+s layout stacking
-bindsym $mod+g layout tabbed
-bindsym $mod+e layout toggle split
+# bindsym $mod+s layout stacking
+# bindsym $mod+g layout tabbed
+# bindsym $mod+e layout toggle split
 
 # toggle tiling / floating
 bindsym $mod+Shift+space floating toggle
@@ -298,7 +324,7 @@ bindsym $mod+p exec --no-startup-id /usr/local/bin/switch-audio-port
 ## App shortcuts
 bindsym $mod+u exec --no-startup-id /bin/thunar
 # bindsym $mod+b exec --no-startup-id /bin/brave
-bindsym $mod+b exec flatpak run io.github.zen_browser.zen
+bindsym $mod+b exec zen-browser
 bindsym $mod+Mod1+b exec --no-startup-id /bin/chromium
 
 # bindsym $mod+x exec --no-startup-id scrot -s 
@@ -344,9 +370,9 @@ workspace $ws10 output DP-2
 assign [class="brave"] $ws1
 assign [class="Thunar"] $ws3
 assign [class="thunderbird"] $ws9
-assign [class="TelegramDesktop"] $ws5
+assign [class="TelegramDesktop"] $ws6
 assign [class="discord"] $ws10
-assign [class="spotify"] $ws10
+# assign [class="spotify"] $ws10
 assign [class="slack"] $ws8
 
 
@@ -399,6 +425,7 @@ exec_always --no-startup-id picom --config  ~/.config/picom.conf
 
 #get auth work with polkit-gnome
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
+# exec --no-startup-id sleep 15 aw-qt
 
 
 # dex execute .desktop files + apps using /etc/xdg/autostart.
@@ -458,11 +485,12 @@ exec_always --no-startup-id /bin/autotiling
 
 # Autostart apps as you like
 #exec --no-startup-id sleep 2 && xfce4-terminal
-# exec --no-startup-id sleep 7 && brave
+exec --no-startup-id sleep 7 && zen-browser
 exec --no-startup-id sleep 7 && discord
-exec --no-startup-id sleep 9 && spotify
-exec --no-startup-id sleep 11 && slack
+# exec --no-startup-id sleep 11 && slack
 exec --no-startup-id sleep 13 && thunderbird
+# Start up Activity watcher
+exec --no-startup-id ghostty -e aw-qt
 ###############
 # system tray #
 ###############
@@ -609,7 +637,7 @@ client.placeholder		#24273a #24273a #24273a #24273a
 
 ## rofi bindings fancy application menu ($mod+d /F9 optional disabled)
 
-bindsym $mod+d exec --no-startup-id rofi -modi drun -show drun \
+bindsym $mod+Control+Return exec --no-startup-id rofi -modi drun -show drun \
 		-config ~/.config/rofi/menu.rasi -show-icons
 
 #bindsym F9 exec --no-startup-id rofi -modi drun -show drun \

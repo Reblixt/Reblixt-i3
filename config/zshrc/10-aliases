@@ -17,29 +17,8 @@ alias shutdown='systemctl poweroff'
 alias v='$EDITOR'
 alias vi='$EDITOR'
 alias vim='$EDITOR'
-alias ts='~/.config/ml4w/scripts/snapshot.sh'
 alias wifi='nmtui'
-alias cleanup='~/.config/ml4w/scripts/cleanup.sh'
 alias hh='npx hardhat'
-
-# -----------------------------------------------------
-# ML4W Apps
-# -----------------------------------------------------
-alias ml4w='com.ml4w.welcome'
-alias ml4w-settings='com.ml4w.dotfilessettings'
-alias ml4w-hyprland='com.ml4w.hyprland.settings'
-alias ml4w-sidebar='ags -t sidebar'
-alias ml4w-diagnosis='~/.config/hypr/scripts/diagnosis.sh'
-alias ml4w-hyprland-diagnosis='~/.config/hypr/scripts/diagnosis.sh'
-alias ml4w-qtile-diagnosis='~/.config/ml4w/qtile/scripts/diagnosis.sh'
-alias ml4w-update='~/.config/ml4w/update.sh'
-
-# -----------------------------------------------------
-# Window Managers
-# -----------------------------------------------------
-
-alias Qtile='startx'
-# Hyprland with Hyprland
 
 # -----------------------------------------------------
 # Git
@@ -55,11 +34,6 @@ alias gcheck="git checkout"
 alias gcredential="git config credential.helper store"
 
 # -----------------------------------------------------
-# Scripts
-# -----------------------------------------------------
-alias ascii='~/.config/ml4w/scripts/figlet.sh'
-
-# -----------------------------------------------------
 # System
 # -----------------------------------------------------
 alias update-grub='sudo grub-mkconfig -o /boot/grub/grub.cfg'
@@ -68,7 +42,6 @@ alias update-grub='sudo grub-mkconfig -o /boot/grub/grub.cfg'
 # Foundry && Sui
 # -----------------------------------------------------
 alias ft="forge test --mt "
-
 alias sui-node="sui start --with-faucet --force-regenesis"
 # -----------------------------------------------------
 # Qtile
