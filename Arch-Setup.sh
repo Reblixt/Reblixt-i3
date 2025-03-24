@@ -25,15 +25,19 @@ fi
 echo "Installing i3 and other packages"
 sudo pacman -S --noconfirm i3 thunar picom polybar rofi feh dunst cmus redshift timeshift grub-btrfs starship
 
+
 echo "For rust relatied packages"
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 sudo pacman -S --noconfirm lldb
 echo "Installing Bluetooth packages"
 sudo pacman -S --noconfirm git bluez bluez-utils blueman
 
 echo "Installing Neovim and other packages"
-sudo pacman -S --noconfirm nodejs-lts-iron npm neovim fd ripgrep fzf bat btop luarocks wl-clipboard unzip
-sudo pacman -S --noconfirm zsh lazygit alacritty kitty xclip tmux zoxide glow lsd
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.2/install.sh | bash
+sudo pacman -S --noconfirm  neovim fd ripgrep fzf bat btop luarocks wl-clipboard unzip
+sudo pacman -S --noconfirm zsh lazygit kitty xclip tmux zoxide glow lsd
 sudo npm install -g neovim
+nvm install 22
 
 echo "Installing Flatpak"
 sudo pacman -S --noconfirm flatpak
@@ -64,7 +68,7 @@ cd ..
 rm -rf yay
 
 echo "Installing packages with yay"
-yay -S --noconfirm autotiling brave-bin chromium spotify discord blueberry slack-desktop ttf-symbola noto-fonts-cjk noto-fonts-emoji ttf-twemoji telegram-desktop zen-browser-bin flameshot
+yay -S --noconfirm autotiling chromium spotify discord blueberry slack-desktop ttf-symbola noto-fonts-cjk noto-fonts-emoji ttf-twemoji telegram-desktop zen-browser-bin flameshot ghostty-git
 
 echo "Installing Posting"
 curl -LsSf https://astral.sh/uv/install.sh | sh
@@ -83,10 +87,10 @@ echo "Moving Pictures"
 mv ~/git/Reblixt-i3/Pictures/ ~/Pictures
 
 echo "Cleaning up old configs"
-rm -rf ~/.config/i3 ~/.config/polybar ~/.config/rofi ~/.config/kitty ~/.config/picom.conf ~/.config/alacritty
+rm -rf ~/.config/i3 ~/.config/polybar ~/.config/rofi ~/.config/kitty ~/.config/picom.conf 
 
 echo "Moving new configs"
-mv ~/git/Reblixt-i3/config/{i3,rofi,polybar,kitty,picom.conf,alacritty,catppuccin,dunst,starship.toml,redshift.conf} ~/.config
+mv ~/git/Reblixt-i3/config/{i3,rofi,polybar,kitty,picom.conf,ghostty,catppuccin,dunst,starship.toml,redshift.conf} ~/.config
 chmod +x ~/.config/catppuccin/scripts/cava.sh
 chmod +x ~/.config/catppuccin/scripts/cmus.sh
 chmod +x ~/.config/catppuccin/scripts/powermenu.sh
@@ -97,7 +101,7 @@ echo "Moving zsh config"
 mv ~/git/Reblixt-i3/.zshrc ~/
 
 echo "Moving nvim config"
-git clone https://github.com/Reblixt/Solidity-Nvim.git
+# git clone https://github.com/Reblixt/Solidity-Nvim.git
 git clone https://github.com/Reblixt/Nvchad-Neovim.git 
 mv Nvchad-Neovim ~/.config/nvim
 
