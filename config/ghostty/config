@@ -26,15 +26,15 @@ keybind = ctrl+shift+l=goto_split:right
 mouse-hide-while-typing = true
 
 window-padding-balance = true
-font-family = FiraCode Nerd Font Mono SemBd
+font-family = FiraCode Nerd Font med
 # theme =  catppuccin-mocha
 theme = kanagawabones
-font-size = 15
+font-size = 17
 window-theme = ghostty 
 window-colorspace = "display-p3"
 # gtk-titlebar = true
 adjust-cell-height = 5% 
-background-opacity = 0.96
+background-opacity = 0.8
 auto-update = check 
 
 window-padding-x = 5

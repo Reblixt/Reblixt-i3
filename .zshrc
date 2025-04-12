@@ -1,4 +1,3 @@
-# Add deno completions to search path
 if [[ ":$FPATH:" != *":/home/carl/.zsh/completions:"* ]]; then export FPATH="/home/carl/.zsh/completions:$FPATH"; fi
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
@@ -64,17 +63,27 @@ zstyle ':fzf-tab:complete:cd:*' fzf-preview 'ls --color $realpath'
 zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
 
 # Aliases 
+alias c="clear"
 alias ll='ls -l'
 alias ls='lsd'
 alias vim='nvim'
 alias vi='nvim'
 alias tmuxit="tmux source-file ~/.tmux.conf"
-alias update="sudo pacman -Syu"
-alias upgrade='sudo pacman -Syu'
-alias install="sudo pacman -S"
+alias update="yay -Syu"
+alias install="yay -S"
 alias tmux="tmux -2"
 alias neo="neovide . &"
-alias icat="kitten icat"
+alias chat-gemma="ollama run gemma3:4b"
+alias chat-deep="ollama run deepseek-r1:8b"
+# alias icat="kitten icat"
+alias with_deadkeys='setxkbmap se'
+alias no_deadkeys='setxkbmap se -variant nodeadkeys'
+
+# Sui specific
+alias sui-t="sui move test"
+alias sui-b="sui move build"
+alias sui-coverage="sui-debug move test --coverage && sui-rapport"
+alias sui-rapport="sui move coverage summary"
 
 
 
@@ -86,6 +95,8 @@ alias icat="kitten icat"
 
 export PATH=$HOME/.local/bin:$PATH
 export PATH="$HOME/.cargo/bin:$PATH"
+export PATH="$HOME/.sui:$PATH"
+export PATH="$HOME/.deno/bin:$PATH"
 # export PATH="$HOME/.local/share/solana/install/active_release/bin:$PATH"
 # . "/home/carl/.deno/env"
 
@@ -93,3 +104,17 @@ export PATH="$HOME/.cargo/bin:$PATH"
 eval "$(fzf --zsh)"
 eval "$(zoxide init --cmd cd zsh)" 
 eval "$(starship init zsh)"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# bun completions
+[ -s "/home/carl/.bun/_bun" ] && source "/home/carl/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+#key 
+export ANTHROPIC_API_KEY=""
+export GEMINI_API_KEY=""
