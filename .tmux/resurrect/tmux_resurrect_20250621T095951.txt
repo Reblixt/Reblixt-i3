@@ -1,0 +1,80 @@
+pane	Admin-backend	1	1	:*	1	reblixt	:/home/carl/Coding/4plus/Hokko-admin-backend	1	nvim	:nvim .
+pane	Admin-backend	2	0	:-	1	reblixt	:/home/carl/Coding/4plus/Hokko-admin-backend	1	zsh	:
+pane	Admin-frontend	1	1	:*	1	reblixt	:/home/carl/Coding/4plus/Hokko-admin	1	nvim	:nvim .
+pane	Admin-frontend	2	0	:-	1	reblixt	:/home/carl/Coding/4plus/Hokko-admin	1	zsh	:
+pane	Backend-Hokko	1	1	:*	1	reblixt	:/home/carl/Coding/4plus/hokko-backend-prototype	1	nvim	:nvim .
+pane	Backend-Hokko	2	0	:	1	reblixt	:/home/carl/Coding/4plus/hokko-backend-prototype	1	zsh	:
+pane	Backend-Hokko	3	0	:-	1	reblixt	:/home/carl/Coding/4plus/hokko-backend-prototype	1	zsh	:
+pane	Frontend-hokko	1	1	:*	1	reblixt	:/home/carl/Coding/4plus/hokko-frontend-prototype	1	nvim	:nvim .
+pane	Frontend-hokko	2	0	:-	1	reblixt	:/home/carl/Coding/4plus/hokko-frontend-prototype	1	zsh	:
+pane	Hamster	1	0	:	1	reblixt	:/home/carl/Playground/hamster	1	nvim	:nvim .
+pane	Hamster	2	0	:	1	reblixt	:/home/carl/Playground/hamster	1	zsh	:
+pane	Hamster	3	1	:*	1	reblixt	:/home/carl/Playground/hamster-backend-nest	1	zsh	:
+pane	Hamster	4	0	:-	1	reblixt	:/home/carl/Playground/hamster-backend-nest	1	zsh	:
+pane	Hamster	5	0	:	1	reblixt	:/home/carl/Playground/hamster-backend-nest	1	zsh	:
+pane	Indexer	1	1	:*	1	reblixt	:/home/carl/Coding/4plus/indexer	1	zsh	:
+pane	Indexer	2	0	:	1	reblixt	:/home/carl/Coding/4plus/indexer	0	zsh	:
+pane	Indexer	2	0	:	2	reblixt	:/home/carl/Coding/4plus/indexer	0	zsh	:
+pane	Indexer	2	0	:	3	reblixt	:/home/carl/Coding/4plus/indexer	0	zsh	:
+pane	Indexer	2	0	:	4	reblixt	:/home/carl/Coding/4plus/indexer	1	zsh	:
+pane	Indexer	2	0	:	5	reblixt	:/home/carl/Coding/4plus/indexer	0	zsh	:
+pane	Indexer	3	0	:	1	reblixt	:/home/carl/Coding/4plus/indexer	1	zsh	:
+pane	Indexer	4	0	:-	1	reblixt	:/home/carl/Coding/4plus/indexer	1	zsh	:
+pane	Indexer	4	0	:-	2	reblixt	:/home/carl/Coding/4plus/indexer	0	zsh	:
+pane	Marketplace	1	1	:*	1	reblixt	:/home/carl/Coding/4plus/sui-contracts/marketplace	1	zsh	:
+pane	Marketplace	2	0	:	1	reblixt	:/home/carl/Coding/4plus/sui-contracts/marketplace	1	zsh	:
+pane	Marketplace	3	0	:-	1	reblixt	:/home/carl/Coding/4plus/sui-contracts/marketplace	1	zsh	:
+pane	Neoki-contracts	1	1	:*	1	reblixt	:/home/carl/Coding/4plus/contracts	1	nvim	:nvim .
+pane	Nft-Standard	1	1	:*	1	reblixt	:/home/carl/Coding/Open-source/Nft/nft	1	nvim	:nvim .
+pane	Nft-Standard	2	0	:	1	reblixt	:/home/carl/Coding/Open-source/Nft/nft	1	zsh	:
+pane	Nft-Standard	3	0	:-	1	reblixt	:/home/carl	1	zsh	:
+pane	Ollama test	1	1	:*	1	reblixt	:/home/carl/Playground/ollama	1	nvim	:nvim .
+pane	Ollama test	2	0	:-	1	reblixt	:/home/carl/Playground/ollama	1	zsh	:
+pane	Read-Indexer	1	1	:*	1	reblixt	:/home/carl/Coding/4plus/read-indexer	1	nvim	:nvim .
+pane	Read-Indexer	2	0	:-	1	reblixt	:/home/carl/Coding/4plus/read-indexer	1	zsh	:
+pane	Read-Indexer	3	0	:	1	reblixt	:/home/carl/Coding/4plus/read-indexer	1	zsh	:
+pane	Rust-side-project	1	0	:-	1	reblixt	:/home/carl/Playground/rust/receipt_reader	1	zsh	:
+pane	Rust-side-project	2	1	:*	1	reblixt	:/home/carl/Playground/rust/receipt_reader	1	zsh	:
+pane	Vibz	1	1	:*	1	reblixt	:/home/carl/Coding/Open-source/Vibz_World_Citizenship	1	nvim	:nvim .
+pane	Vibz	2	0	:-	1	reblixt	:/home/carl/Coding/Open-source/Vibz_World_Citizenship	1	zsh	:
+pane	liquid-burl-staking	1	1	:*	1	reblixt	:/home/carl/Coding/Burlcore/burl-liquid-staking	1	nvim	:nvim .
+pane	liquid-burl-staking	2	0	:-	1	reblixt	:/home/carl/Coding/Burlcore/burl-liquid-staking	1	zsh	:
+pane	scratch	1	1	:*	1	reblixt	:/home/carl/Coding/4plus/indexer	1	zsh	:
+window	Admin-backend	1	:nvim	1	:*	ce3e,193x48,0,0,1	:
+window	Admin-backend	2	:zsh	0	:-	ce3f,193x48,0,0,2	:
+window	Admin-frontend	1	:nvim	1	:*	ce40,193x48,0,0,3	:
+window	Admin-frontend	2	:Server	0	:-	ce41,193x48,0,0,4	off
+window	Backend-Hokko	1	:Editor	1	:*	ce42,193x48,0,0,5	off
+window	Backend-Hokko	2	:Server	0	:	ce43,193x48,0,0,6	off
+window	Backend-Hokko	3	:Docker	0	:-	ce44,193x48,0,0,7	off
+window	Frontend-hokko	1	:nvim	1	:*	ce45,193x48,0,0,8	:
+window	Frontend-hokko	2	:zsh	0	:-	ce46,193x48,0,0,9	:
+window	Hamster	1	:Editor	0	:	674f,193x48,0,0,10	off
+window	Hamster	2	:Cmd	0	:	6750,193x48,0,0,11	off
+window	Hamster	3	:Backend	1	:*	6751,193x48,0,0,12	off
+window	Hamster	4	:Back-Cmd	0	:-	6752,193x48,0,0,13	off
+window	Hamster	5	:zsh	0	:	6753,193x48,0,0,14	:
+window	Indexer	1	:Neovim	1	:*	6754,193x48,0,0,15	off
+window	Indexer	2	:Servers	0	:	8e6a,193x48,0,0{120x48,0,0[120x24,0,0,16,120x23,0,25,17],72x48,121,0[72x11,121,0,18,72x14,121,12,19,72x21,121,27,20]}	off
+window	Indexer	3	:Docker	0	:	e750,193x48,0,0,21	off
+window	Indexer	4	:zsh	0	:-	efdd,193x48,0,0{96x48,0,0,22,96x48,97,0,23}	:
+window	Marketplace	1	:Neovim	1	:*	e753,193x48,0,0,24	off
+window	Marketplace	2	:Cmd	0	:	e754,193x48,0,0,25	off
+window	Marketplace	3	:Scripts	0	:-	e755,193x48,0,0,26	off
+window	Neoki-contracts	1	:nvim	1	:*	e756,193x48,0,0,27	:
+window	Nft-Standard	1	:nvim	1	:*	e757,193x48,0,0,28	:
+window	Nft-Standard	2	:cmd	0	:	e758,193x48,0,0,29	off
+window	Nft-Standard	3	:Scripts	0	:-	6750,193x48,0,0,30	off
+window	Ollama test	1	:nvim	1	:*	6751,193x48,0,0,31	:
+window	Ollama test	2	:zsh	0	:-	6752,193x48,0,0,32	:
+window	Read-Indexer	1	:nvim	1	:*	6753,193x48,0,0,33	:
+window	Read-Indexer	2	:Servers	0	:-	6754,193x48,0,0,34	off
+window	Read-Indexer	3	:Docker	0	:	6755,193x48,0,0,35	off
+window	Rust-side-project	1	:Editor	0	:-	6756,193x48,0,0,36	off
+window	Rust-side-project	2	:zsh	1	:*	6757,193x48,0,0,37	:
+window	Vibz	1	:nvim	1	:*	6758,193x48,0,0,38	:
+window	Vibz	2	:zsh	0	:-	6759,193x48,0,0,39	:
+window	liquid-burl-staking	1	:nvim	1	:*	e750,193x48,0,0,40	:
+window	liquid-burl-staking	2	:zsh	0	:-	e751,193x48,0,0,41	:
+window	scratch	1	:zsh	1	:*	e752,193x48,0,0,42	:
+state	Rust-side-project	Indexer

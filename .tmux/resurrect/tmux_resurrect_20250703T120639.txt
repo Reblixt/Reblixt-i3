@@ -1,0 +1,80 @@
+pane	15	1	1	:*	1	reblixt	:/home/carl/Coding/4plus/hokko-sdk	1	nvim	:nvim .
+pane	15	2	0	:-	1	reblixt	:/home/carl/Coding/4plus/hokko-sdk	1	zsh	:
+pane	Admin-backend	1	1	:*	1	reblixt	:/home/carl/Coding/4plus/Hokko-admin-backend	1	nvim	:nvim .
+pane	Admin-backend	2	0	:-	1	reblixt	:/home/carl/Coding/4plus/Hokko-admin-backend	1	zsh	:
+pane	Admin-frontend	1	1	:*	1	reblixt	:/home/carl/Coding/4plus/Hokko-admin	1	nvim	:nvim .
+pane	Admin-frontend	2	0	:-	1	reblixt	:/home/carl/Coding/4plus/Hokko-admin	1	zsh	:
+pane	Backend-Hokko	1	1	:*	1	reblixt	:/home/carl/Coding/4plus/hokko-backend-prototype	1	nvim	:nvim .
+pane	Backend-Hokko	2	0	:	1	reblixt	:/home/carl/Coding/4plus/hokko-backend-prototype	1	zsh	:
+pane	Backend-Hokko	3	0	:-	1	reblixt	:/home/carl/Coding/4plus/hokko-backend-prototype	1	zsh	:
+pane	Frontend-hokko	1	1	:*	1	reblixt	:/home/carl/Coding/4plus/hokko-frontend-prototype	1	zsh	:
+pane	Frontend-hokko	2	0	:-	1	reblixt	:/home/carl/Coding/4plus/hokko-frontend-prototype	1	zsh	:
+pane	Indexer	1	1	:*	1	reblixt	:/home/carl/Coding/4plus/indexer	1	nvim	:nvim .
+pane	Indexer	2	0	:-	1	reblixt	:/home/carl/Coding/4plus/indexer	1	zsh	:
+pane	Indexer	2	0	:-	2	reblixt	:/home/carl/Coding/4plus/indexer	0	zsh	:
+pane	Indexer	2	0	:-	3	reblixt	:/home/carl/Coding/4plus/indexer	0	zsh	:
+pane	Indexer	2	0	:-	4	reblixt	:/home/carl/Coding/4plus/indexer	0	zsh	:
+pane	Indexer	3	0	:	1	reblixt	:/home/carl/Coding/4plus/indexer	1	zsh	:
+pane	Indexer	4	0	:	1	reblixt	:/home/carl/Coding/4plus/indexer	1	zsh	:
+pane	Marketplace	1	1	:*	1	reblixt	:/home/carl/Coding/4plus/sui-contracts/marketplace	1	zsh	:
+pane	Marketplace	2	0	:	1	reblixt	:/home/carl/Coding/4plus/sui-contracts/marketplace	1	zsh	:
+pane	Marketplace	3	0	:-	1	reblixt	:/home/carl/Coding/4plus/sui-contracts/marketplace	1	zsh	:
+pane	Nft-Standard	1	1	:*	1	reblixt	:/home/carl/Coding/Open-source/Reforge/Nft/nft	1	nvim	:nvim .
+pane	Nft-Standard	2	0	:	1	reblixt	:/home/carl/Coding/Open-source/Reforge/Nft/nft	1	zsh	:
+pane	Nft-Standard	3	0	:-	1	reblixt	:/home/carl	1	zsh	:
+pane	Ollama test	1	1	:*	1	reblixt	:/home/carl/Playground/ollama	1	nvim	:nvim .
+pane	Ollama test	2	0	:-	1	reblixt	:/home/carl/Playground/ollama	1	zsh	:
+pane	Read-Indexer	1	0	:	1	reblixt	:/home/carl/Coding/4plus/read-indexer	1	zsh	:
+pane	Read-Indexer	2	0	:-	1	reblixt	:/home/carl/Coding/4plus/read-indexer	1	zsh	:
+pane	Read-Indexer	3	1	:*	1	reblixt	:/home/carl/Coding/4plus/read-indexer	1	zsh	:
+pane	Reforge	1	1	:*	1	reblixt	:/home/carl/Coding/Open-source/Reforge	1	zsh	:
+pane	Reforge	2	0	:-	1	reblixt	:/home/carl/Coding/Open-source/Reforge/Profit_Distrobution	1	zsh	:
+pane	Rust-Recipet	1	0	:	1	reblixt	:/home/carl/Playground/rust/receipt_reader	1	nvim	:nvim .
+pane	Rust-Recipet	2	0	:	1	reblixt	:/home/carl/Playground/rust/receipt_reader	1	zsh	:
+pane	Rust-Recipet	2	0	:	2	reblixt	:/home/carl/Playground/rust/receipt_reader	0	zsh	:
+pane	Rust-Recipet	3	1	:*	1	reblixt	:/home/carl/Playground/rust/receipt_frontend	1	zsh	:
+pane	Rust-Recipet	4	0	:-	1	reblixt	:/home/carl/Playground/rust/receipt_frontend	0	zsh	:
+pane	Rust-Recipet	4	0	:-	2	reblixt	:/home/carl/Playground/rust/receipt_frontend	1	zsh	:
+pane	Rust-Recipet	4	0	:-	3	reblixt	:/home/carl/Playground/rust/receipt_frontend	0	zsh	:
+pane	Vibz	1	1	:*	1	reblixt	:/home/carl/.config/nvim	1	zsh	:
+pane	Vibz	2	0	:-	1	reblixt	:/home/carl/Coding/Open-source/Vibz_World_Citizenship	1	zsh	:
+pane	Vibz	2	0	:-	2	reblixt	:/home/carl/Coding/Open-source/Vibz_World_Citizenship	0	zsh	:
+pane	betbarkers	1	1	:*	1	reblixt	:/home/carl/Coding/consultant/betbarkers/bet_nft	1	zsh	:
+pane	scratch	1	1	:*	1	reblixt	:/home/carl/Coding/consultant/betbarkers/bet_nft	1	zsh	:
+window	15	1	:nvim	1	:*	e752,193x48,0,0,42	:
+window	15	2	:zsh	0	:-	e753,193x48,0,0,43	:
+window	Admin-backend	1	:nvim	1	:*	ce3e,193x48,0,0,1	:
+window	Admin-backend	2	:zsh	0	:-	ce3f,193x48,0,0,2	:
+window	Admin-frontend	1	:nvim	1	:*	ce40,193x48,0,0,3	:
+window	Admin-frontend	2	:Server	0	:-	ce41,193x48,0,0,4	off
+window	Backend-Hokko	1	:Editor	1	:*	ce42,193x48,0,0,5	off
+window	Backend-Hokko	2	:Server	0	:	ce43,193x48,0,0,6	off
+window	Backend-Hokko	3	:Docker	0	:-	ce44,193x48,0,0,7	off
+window	Frontend-hokko	1	:zsh	1	:*	ce45,193x48,0,0,8	:
+window	Frontend-hokko	2	:zsh	0	:-	ce46,193x48,0,0,9	:
+window	Indexer	1	:Neovim	1	:*	674f,193x48,0,0,10	off
+window	Indexer	2	:Servers	0	:-	2992,193x48,0,0{97x48,0,0[97x26,0,0,11,97x21,0,27,12],95x48,98,0[95x32,98,0,13,95x15,98,33,14]}	off
+window	Indexer	3	:Docker	0	:	6754,193x48,0,0,15	off
+window	Indexer	4	:zsh	0	:	6755,193x48,0,0,16	:
+window	Marketplace	1	:Neovim	1	:*	6756,193x48,0,0,17	off
+window	Marketplace	2	:Cmd	0	:	6757,193x48,0,0,18	off
+window	Marketplace	3	:Scripts	0	:-	6758,193x48,0,0,19	off
+window	Nft-Standard	1	:nvim	1	:*	e74f,193x48,0,0,20	:
+window	Nft-Standard	2	:cmd	0	:	e750,193x48,0,0,21	off
+window	Nft-Standard	3	:Scripts	0	:-	e751,193x48,0,0,22	off
+window	Ollama test	1	:nvim	1	:*	e752,193x48,0,0,23	:
+window	Ollama test	2	:zsh	0	:-	e753,193x48,0,0,24	:
+window	Read-Indexer	1	:zsh	0	:	e754,193x48,0,0,25	:
+window	Read-Indexer	2	:Servers	0	:-	e755,193x48,0,0,26	off
+window	Read-Indexer	3	:Docker	1	:*	e756,193x48,0,0,27	off
+window	Reforge	1	:Reforge	1	:*	e757,193x48,0,0,28	off
+window	Reforge	2	:zsh	0	:-	e758,193x48,0,0,29	:
+window	Rust-Recipet	1	:App	0	:	6750,193x48,0,0,30	off
+window	Rust-Recipet	2	:Servers	0	:	7bb0,193x48,0,0{140x48,0,0,31,52x48,141,0,32}	off
+window	Rust-Recipet	3	:Frontend	1	:*	6753,193x48,0,0,33	off
+window	Rust-Recipet	4	:Http-Server	0	:-	9011,193x48,0,0{112x48,0,0,34,80x48,113,0[80x24,113,0,35,80x23,113,25,36]}	off
+window	Vibz	1	:zsh	1	:*	6757,193x48,0,0,37	:
+window	Vibz	2	:zsh	0	:-	4c9e,193x48,0,0[193x1,0,0,38,193x46,0,2,39]	:
+window	betbarkers	1	:zsh	1	:*	e750,193x48,0,0,40	:
+window	scratch	1	:zsh	1	:*	e751,193x48,0,0,41	:
+state	15	Indexer

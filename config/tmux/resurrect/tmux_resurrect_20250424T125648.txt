@@ -1,0 +1,8 @@
+pane	1	1	1	:*	1	reblixt	:/home/carl	0	nvim	:nvim .tmux.conf
+pane	1	1	1	:*	2	reblixt	:/home/carl	1	nvim	:nvim .zshrc
+pane	Admin-backend	1	1	:*	1	reblixt	:/home/carl/Coding/4plus/Hokko-admin-backend	1	nvim	:nvim .
+pane	Admin-backend	2	0	:-	1	reblixt	:/home/carl	1	zsh	:
+window	1	1	:nvim	1	:*	4c65,180x44,0,0{90x44,0,0,1,89x44,91,0,4}	:
+window	Admin-backend	1	:nvim	1	:*	bc7f,180x44,0,0,2	:
+window	Admin-backend	2	:zsh	0	:-	bc80,180x44,0,0,3	:
+state	1	Admin-backend
