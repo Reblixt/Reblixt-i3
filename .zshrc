@@ -1,3 +1,5 @@
+# Add deno completions to search path
+if [[ ":$FPATH:" != *":/home/carl/.zsh/completions:"* ]]; then export FPATH="/home/carl/.zsh/completions:$FPATH"; fi
 if [[ ":$FPATH:" != *":/home/carl/.zsh/completions:"* ]]; then export FPATH="/home/carl/.zsh/completions:$FPATH"; fi
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
@@ -14,8 +16,6 @@ fi
 
 source "${ZINIT_HOME}/zinit.zsh"
 
-# Installing part of 10level10k
-# zinit ice depth=1; zinit light romkatv/powerlevel10k
 
 # Add in the rest of the plugins
 zinit light zsh-users/zsh-autosuggestions
@@ -28,7 +28,7 @@ zinit light jeffreytse/zsh-vi-mode
 zinit snippet OMZP::git
 # zinit snippet OMZP::sudo
 zinit snippet OMZP::archlinux
-zinit snippet OMZP::tmux
+# zinit snippet OMZP::tmux
 
 autoload -Uz compinit && compinit
 
@@ -68,16 +68,22 @@ alias ll='ls -l'
 alias ls='lsd'
 alias vim='nvim'
 alias vi='nvim'
-alias tmuxit="tmux source-file ~/.tmux.conf"
 alias update="yay -Syu"
 alias install="yay -S"
-alias tmux="tmux -2"
+alias ff-p="fzf --preview 'bat --style=numbers --color=always {}' --preview-window=right:40%"
+# alias tmuxit="tmux source-file ~/.tmux.conf"
+# alias tmux="tmuxit && tmux"
 alias neo="neovide . &"
-alias chat-gemma="ollama run gemma3:4b"
+alias chat-gemma="ollama run gemma3"
 alias chat-deep="ollama run deepseek-r1:8b"
 # alias icat="kitten icat"
 alias with_deadkeys='setxkbmap se'
 alias no_deadkeys='setxkbmap se -variant nodeadkeys'
+alias pn="pnpm"
+alias lg="lazygit"
+
+# Foundry 
+alias ft="forge test --mt"
 
 # Sui specific
 alias sui-t="sui move test"
@@ -97,7 +103,7 @@ export PATH=$HOME/.local/bin:$PATH
 export PATH="$HOME/.cargo/bin:$PATH"
 export PATH="$HOME/.sui:$PATH"
 export PATH="$HOME/.deno/bin:$PATH"
-# export PATH="$HOME/.local/share/solana/install/active_release/bin:$PATH"
+export PATH="$HOME/.local/share/solana/install/active_release/bin:$PATH"
 # . "/home/carl/.deno/env"
 
 # Shell integration
@@ -117,4 +123,32 @@ export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 #key 
 export ANTHROPIC_API_KEY=""
-export GEMINI_API_KEY=""
+export GOOGLE_AI_API_KEY=""
+# export DOCKER_HOST=unix:///var/run/docker.sock
+export QT_QPA_PLATFORM=wayland
+# pnpm
+export PNPM_HOME="/home/carl/.local/share/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
+
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+
+# Added by LM Studio CLI (lms)
+export PATH="$PATH:/home/carl/.lmstudio/bin"
+
+# Android development 
+export JAVA_HOME="/opt/android-studio/jbr"
+export ANDROID_HOME="$HOME/Android/Sdk"
+export NDK_HOME="$ANDROID_HOME/ndk/29.0.13599879"
+export ANDROID_SDK_ROOT="$ANDROID_HOME"
+export PATH="$PATH:$ANDROID_HOME/emulator:$ANDROID_HOME/platform-tools"
+export PATH="$JAVA_HOME/bin:$PATH"                             # <-- ADD THIS LINE
+export PATH="$ANDROID_HOME/emulator:$PATH"
+export PATH="$ANDROID_HOME/platform-tools:$PATH"
+export PATH="$ANDROID_HOME/cmdline-tools/latest/bin:$PATH"
+export QT_QPA_PLATFORM=xcb
+# End of LM Studio CLI section
+
