@@ -1,0 +1,21 @@
+[Unit]
+Description=tmux default session (detached)
+Documentation=man:tmux(1)
+After=graphical-session.target
+
+[Service]
+Type=forking
+Environment=DISPLAY=:0
+; ExecStart=/usr/bin/tmux new-session -d
+ExecStart=/home/carl/.tmux/plugins/tmux-continuum/scripts/continuum_restore.sh
+
+; ExecStop=/home/carl/.tmux/plugins/tmux-resurrect/scripts/save.sh
+ExecStop=/home/carl/.tmux/plugins/tmux-continuum/scripts/continuum_save.sh
+ExecStop=/usr/bin/tmux kill-server
+KillMode=process
+Restart=on-failure
+
+RestartSec=2
+
+[Install]
+WantedBy=default.target
